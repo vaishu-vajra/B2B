@@ -1,0 +1,9 @@
+{
+  "id": "skill_6afbcc703a688191879fb0f865cf7e3b0d7d644a805b687b",
+  "created_at": 1794886768,
+  "default_version": "1",
+  "description": "Assembles a run-specific context package for a social-content workflow stage, checking source permissions, approval status, and freshness. Selects the approved knowledge, live inputs, and earlier stage outputs relevant to that stage, then records source versions, gaps, conflicts, provisional information, limitations, and a Ready, Limited, or Blocked verdict. Does not create or review content, approve knowledge, resolve conflicts, modify source files, calculate KRS, publish, or change access rights.",
+  "latest_version": "1",
+  "name": "context-assembler",
+  "object": "skill"
+}
