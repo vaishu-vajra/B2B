@@ -292,3 +292,12 @@ This document tracks changes made to the knowledge layer, context layer, skills,
 - **Already:** Several skill steps and older knowledge notes still required approved proof points, evidence, or reuse approval before drafting and could block or revise content for a supplied-claim concern.
 - **Changed:** Brief Qualifier, Context Assembler, Content Planner, Post Writer, Post Quality Analyst, and Publish and Verify now treat supplied claims as final workflow inputs. No separate claim-level approval or evidence is required. Potential accuracy, disclosure, or source concerns go to human final-copy approval; exact final-copy approval remains required before publication.
 - **Where:** Project and installed copies of the workflow skills; `knowledge layer/claims.md`, `knowledge layer/knowledge_index.md`, `knowledge layer/brand.md`, `knowledge layer/learning.md`; and `context/period_brief.md`.
+
+## Changes made on 19 November 2026
+
+### Learning data split for API input efficiency
+
+- **Already:** `learning.md` contained the 63 post records with full captions and 13 detailed feedback records, making it a large always-loaded input.
+- **Changed:** Replaced the active `learning.md` with the supplied compact core. Added `learning_posts.csv` for the 63 full post rows and `learning_feedback.csv` for the 13 feedback and before/after text rows. Preserved the previous full file as `learning.md.pre-split-2026-11-19.bak`. Updated stage-specific API input selection: all stages keep the core; Post Writer and Post Quality Analyst receive selected, excerpted CSV rows; Content Planner can receive dates and opening lines from the last 60 days; Brief Qualifier, Competitor Scan and Publish and Verify do not receive CSV excerpts. The API uses Python's CSV parser with UTF-8 and caps CSV-derived material at approximately 3,000 tokens, marking shortened fields.
+- **Where:** `knowledge layer/learning.md`, `knowledge layer/learning_posts.csv`, `knowledge layer/learning_feedback.csv`, `knowledge layer/learning.md.pre-split-2026-11-19.bak`, `knowledge layer/knowledge_index.md`, `api_pipeline/workflow_inputs.json`, `api_pipeline/main.py`, relevant project and installed `SKILL.md` files.
+- **Validation:** The posts CSV parsed as 63 rows with the expected 14 columns; the feedback CSV parsed as 13 rows with the expected 5 columns. The supplied core's 63 metrics agree with the post CSV. No skill or OpenAI API call was made.

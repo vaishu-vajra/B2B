@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "knowledge_files": {
+    "period_brief": "context/period_brief.md",
+    "knowledge_index": "knowledge layer/knowledge_index.md",
+    "brand": "knowledge layer/brand.md",
+    "claims": "knowledge layer/claims.md",
+    "market": "knowledge layer/market.md",
+    "operations": "knowledge layer/operations.md",
+    "learning": "knowledge layer/learning.md"
+  },
+  "stages": {
+    "brief-qualifier": {
+      "required_knowledge": ["period_brief", "knowledge_index", "brand", "learning"],
+      "optional_knowledge": ["claims", "market", "operations"],
+      "required_prior_outputs": [],
+      "optional_prior_outputs": []
+    },
+    "content-planner": {
+      "required_knowledge": ["period_brief", "brand", "operations", "learning"],
+      "optional_knowledge": ["claims", "market"],
+      "required_prior_outputs": ["brief-qualifier"],
+      "optional_prior_outputs": ["content-planner"]
+    },
+    "post-writer": {
+      "required_knowledge": ["period_brief", "knowledge_index", "brand", "operations", "learning"],
+      "optional_knowledge": ["claims"],
+      "required_prior_outputs": ["brief-qualifier", "content-planner"],
+      "optional_prior_outputs": ["post-writer"]
+    },
+    "post-quality-analyst": {
+      "required_knowledge": ["period_brief", "knowledge_index", "brand", "operations", "learning"],
+      "optional_knowledge": ["claims"],
+      "required_prior_outputs": ["brief-qualifier", "content-planner", "post-writer"],
+      "optional_prior_outputs": ["post-quality-analyst"]
+    },
+    "competitor-scan": {
+      "required_knowledge": ["knowledge_index", "market"],
+      "optional_knowledge": ["period_brief", "brand", "learning"],
+      "required_prior_outputs": [],
+      "optional_prior_outputs": ["competitor-scan"]
+    },
+    "publish-and-verify": {
+      "required_knowledge": ["knowledge_index", "operations"],
+      "optional_knowledge": ["period_brief", "brand", "claims"],
+      "required_prior_outputs": ["content-planner", "post-quality-analyst"],
+      "optional_prior_outputs": ["post-writer"]
+    }
+  },
+  "prior_output_paths_must_be_relative_to_project_root": true,
+  "allowed_prior_output_folders": ["output", "context", "context package", "output_latest", "context_package_latest"],
+  "learning_policy": "Pass the complete learning.md file for now. Do not load split CSV files or select excerpts in this phase."
+}

@@ -1,0 +1,969 @@
+rec,post_id,date,owner,format,type,impressions,clicks,reactions,comments,reposts,engagements,eng_rate,caption
+1,7520368887939481601,10/26/2026,Swetha Sitaraman,,Organic,243,3,3,0,1,7,0.0288,"⏳ Two important deadlines are approaching for businesses running Umbraco 13. And the first one is just weeks away.
+
+.NET 8 reaches end of support on 10 November 2026, followed by Umbraco 13 on 14 December 2026.
+
+Your website will continue to function after these dates. But running on unsupported technology brings security risks, compatibility concerns and some difficult decisions for your IT team.
+
+🔍 So, should you upgrade your existing website to Umbraco 17 or consider a fresh build?
+
+That decision deserves more thought than simply comparing development costs.
+
+Umbraco 17 brings significant architectural changes, including a new back-office extension model, changes to the Rich Text Editor, and updated caching capabilities. For websites with custom functionality and third-party integrations, these changes can have implications for migration.
+
+And there is another consideration. What happens if your business cannot complete the migration before December?
+
+💡 Our latest blog examines the technical challenges, migration options, testing requirements and the role of Extended Long-Term Support (XLTS).
+
+At Vajra Global, we help businesses assess their existing Umbraco implementations and plan migrations based on their technical requirements.
+
+📖 Planning your next move? Read our guide before deciding on your migration approach.
+
+🔗 https://lnkd.in/gGCHqZhX
+
+#Umbraco17 #UmbracoMigration #CMSMigration #WebsiteModernisation"
+2,7518944472013975552,10/22/2026,Swetha Sitaraman,,Organic,350,6,4,0,1,11,0.0314,"🔐 Critical PHP Vulnerabilities: How We're Protecting Our Customers
+
+The recently discovered critical PHP vulnerabilities (CVE-2026-109618 and CVE-2026-109619) have raised serious security concerns for websites running on PHP. With potentially significant implications for website security, timely action is essential.
+
+At Vajra Global, we're actively working with our customers to assess exposure and take the necessary preventive measures.
+
+Our teams are keeping customers informed about the current situation and coordinating appropriate action based on their hosting infrastructure.
+✅ For servers we manage directly, we're applying security patches and carrying out the necessary updates.
+✅ For customer-managed infrastructure, we're supporting their internal teams with the required technical assistance.
+✅ For managed hosting environments, we're coordinating with hosting providers to verify that the vulnerabilities have been addressed.
+
+We're committed to helping our customers maintain secure, reliable websites while keeping them informed throughout the process.
+
+💡 There's another interesting aspect to this discovery: AI's role in cybersecurity.
+
+AI helped uncover vulnerabilities that might have been extremely difficult for humans to identify independently. It demonstrates how sophisticated security research is becoming and why businesses must remain vigilant.
+
+Our advice? Keep monitoring security advisories, stay informed about emerging vulnerabilities and apply patches promptly.
+
+Need support with website maintenance and security updates? Connect with Vajra Global to explore our website maintenance services.
+
+#WebsiteSecurity #PHP #Cybersecurity #AI #WebsiteMaintenance #VajraGlobal"
+3,7516434597782515712,10/15/2026,Raymond Praveen,,Organic,543,25,21,2,0,48,0.0884,"Celebrating 8 Years of Nithya K Pillai at Vajra Global!
+
+Eight years of commitment, collaboration, and meaningful contributions. Nithya Pillai has been an integral part of Vajra Global's journey, bringing dedication, thoughtful leadership, and a people-first approach to everything she does.
+
+Her ability to navigate challenges, guide teams, and bring out the best in those around her reflects the professionalism and empathy she brings to the workplace. Through her consistent efforts and collaborative spirit, she continues to make a difference across projects and within the team.
+
+Thank you, Nithya, for being such a valued part of Vajra Global. Here's to celebrating your journey so far and creating many more milestones together!
+
+#WorkAnniversary #TeamVajra #VajraGlobal #Leadership #EmployeeMilestone #BelieveCreateAchieve"
+4,7516188696497426432,10/14/2026,Swetha Sitaraman,,Organic,172,3,3,0,1,7,0.0407,"Can you tell whether an ad was created by AI or a human? 👀
+
+Apparently, most consumers can't.
+
+A recent study found that while AI-generated ads looked just as convincing as human-made ones, they performed 14% worse on short-term sales potential and 17% worse on long-term brand equity.
+
+That's quite a gap for work that looks perfectly acceptable.
+
+And it raises an interesting question for marketing leaders: Are we becoming so impressed by how quickly AI produces work that we're spending less time questioning its effectiveness? 🤔
+
+At Vajra Global, we're seeing AI change how our teams approach creative work. Some of the gains have been remarkable. But we've also encountered situations where experience, cultural understanding and human judgement made all the difference.
+
+Our colleagues Rajesh Senthilvelavan, Gokul R and Priya Ramesh have brought their perspectives together in an article that examines what happens when speed becomes the measure of success.
+
+They share what they've learnt, including a few experiences that might make you reconsider how you evaluate AI-generated work.
+
+📖 Read the article: https://lnkd.in/gQUGvXAD
+
+#AIinMarketing #CreativeJudgement #GenerativeAI #ThoughtLeadership #VajraGlobal"
+5,7513855950005538816,10/08/2026,Swetha Sitaraman,,Organic,441,22,10,0,2,34,0.0771,"🤔 Would you put an advertising budget behind ChatGPT today?
+
+Eight months in, there is enough evidence to take the question seriously. There are already campaigns showing strong returns, but the results are far from uniform.
+
+What makes ChatGPT Ads particularly interesting is the context behind the user's interaction. A person can arrive with a detailed problem, explain what they are trying to achieve and compare possible solutions before an ad even enters the picture. That creates a very different environment for performance marketing.
+
+But there are practical questions marketers need to answer first.
+
+Who can you reach? How much visibility do you get into intent? Which business models are likely to benefit? And how should you measure a channel where the click may be only the beginning of the journey? 💡 
+
+Our SMEs Rajesh Senthilvelavan and Swetha Sitaraman break down what the early data tells us. Their article looks at who should consider a pilot, who may want to wait, and how to structure the test without betting the media budget on an unproven channel.
+
+🔍 Worth a read before you decide where ChatGPT Ads belong in your mix.
+
+Read the full article: https://lnkd.in/g6Ds5inQ
+
+#ChatGPTAds #PaidMedia #PerformanceMarketing #AEO #DigitalMarketing #AI"
+6,7511327923799281664,10/01/2026,Raymond Praveen,,Organic,751,38,37,2,0,77,0.1025,"8 years of dedication, growth, and impact. Today, we recognise and celebrate Sabapathy TK's journey with Vajra Global.
+
+Over the years, Sabapathy has continuously solved new challenges, leading initiatives that help businesses scale through CRM, HubSpot automation, integrations, and revenue-driven growth strategies.
+
+As Head of Growth Platforms, Sabapathy has been instrumental in building and optimising CRM ecosystems, designing intelligent HubSpot automation strategies, and creating seamless integrations across sales, marketing, and customer service platforms.
+
+Beyond the technology, it is his dedication, problem-solving mindset, and willingness to go above and beyond that make him a valued leader and colleague. He continues to shape the future of our AI-native marketing and revenue operations capabilities while mentoring teams and delivering exceptional value to our clients.
+
+Congratulations, Sabapathy, on completing 8 incredible years with Vajra Global. We look forward to achieving many more milestones together.
+
+#WorkAnniversary #TeamVajra #VajraGlobal #EmployeeMilestone #GrowthPlatforms #HubSpot #MarketingAutomation"
+7,7510593466066771968,09/29/2026,Swetha Sitaraman,,Organic,324,11,5,0,0,16,0.0494,"🤔 AI can build you a website in a couple of days. So why would you still need a website partner?
+
+It’s a fair question. And if all you need is a functional website, AI tools can genuinely get you there.
+
+But what happens when your website needs to do more than look good and go live?
+
+A website has to understand what your audience is looking for, guide people towards the right action, support search visibility, connect with your MarTech stack and keep working as the business grows. 📈 
+
+In our latest thought leadership article, our WordPress and Growth experts, Naresh P and Sriram Purushothaman, look at where AI website builders work well, where the gaps start to appear, and why the role of human judgement still matters when a website is tied to real business outcomes.💡 
+
+They also share how we use the same AI tools ourselves, but approach them differently. 🙂 
+
+Worth a read if you’re considering an AI-built website, or wondering whether it will still work for you a year from now.
+
+🔗 Read the full article: https://lnkd.in/efhzMyDk
+
+#AI #WebsiteDevelopment #WebStrategy #DigitalExperience #ThoughtLeadership"
+8,7506695052899983360,09/18/2026,Swetha Sitaraman,,Organic,383,9,14,2,2,27,0.0705,"Missed HubSpot's Unbound 2026? Here's everything you need to know. 📋
+
+HubSpot announced a big set of updates this year, and as HubSpot partners, we broke down every single one.
+
+Here's a quick preview:
+🔹 A CRM that updates itself, logging calls, emails and meetings automatically
+🔹 A rebuilt Breeze Assistant that now takes action, not just answers questions
+🔹 Marketing Studio, a single workspace for building and launching campaigns
+🔹 An expanded Revenue Agent that now handles collections and follow-ups
+🔹 HubSpot becoming the first CRM to integrate with ChatGPT Ads
+
+We've put together a full breakdown covering what each update does and why it matters for your go-to-market team.
+
+If you're a HubSpot user (or thinking about becoming one), this is worth ten minutes of your time. 
+
+👉 Read it here: https://lnkd.in/gp7QVuNj
+
+Sabapathy TK Sriram Purushothaman Ganapathy Sankarabaaham Aravindh Purushothaman ANUKISHORE MURUGESAN Shashidhar Bellur
+
+#HubSpot #HubSpotUnbound2026 #CRM #MarketingTechnology #HubSpotUnbound"
+9,7506590808813432832,09/18/2026,Raymond Praveen,,Organic,228,2,3,0,0,5,0.0219,"There’s a common misconception that HubSpot is simply a CRM for storing customer information.
+
+In reality, HubSpot can bring together marketing, sales, customer data, automation and customer journeys within one connected platform. The real value comes from configuring those tools around how your business actually works.
+
+At Vajra Global, we help businesses set up and implement HubSpot across sales, marketing and customer service so everyone can work together more effectively.
+
+Want to make more out of your HubSpot? Contact Vajra Global to start a conversation. https://lnkd.in/d7g_i83P
+
+#HubSpot #HubSpotPartner #CRM #MarketingAutomation #VajraGlobal"
+10,7504395897481363456,09/12/2026,Raymond Praveen,,Organic,230,3,9,0,0,12,0.0522,"A CRM migration involves much more than transferring data. It means making sure your data, workflows, processes, integrations and teams move together without disrupting the way your business operates.
+
+As a HubSpot Platinum Partner, Vajra Global helps businesses manage this transition from planning and data migration through implementation and optimisation.
+
+Our experiences include helping B2B SaaS companies migrate to HubSpot from other platforms such as Pardot, Marketo, Zoho, Freshsales, Zendesk, and other CRM platforms.
+
+Moving to HubSpot? Learn more about our HubSpot migration services:
+https://bit.ly/4xUVabg
+
+#HubSpot #HubSpotMigration #CRM #B2BSaaS #VajraGlobal"
+11,7504059196640743424,09/11/2026,Raymond Praveen,,Organic,113,1,6,0,0,7,0.0619,"Every business has its own processes, teams, goals, and customer journeys. A one-size-fits-all HubSpot setup often creates friction instead of driving growth.
+
+HubSpot can be configured around the way your business actually works. From CRM setup and data migration to automation, integrations, reporting, user adoption, and ongoing support, the right approach helps build a platform that aligns with your operations and scales with your growth.
+
+The result? A connected HubSpot ecosystem that improves visibility, streamlines workflows, and helps your teams work more efficiently.
+
+Know more: https://bit.ly/4gZ59Vr
+
+#HubSpot #HubSpotPartner #CRM #MarketingAutomation #VajraGlobal"
+12,7501212704788074498,09/03/2026,Swetha Sitaraman,,Organic,227,3,5,0,1,9,0.0396,"🔎 What does it actually take to become more visible in AI-generated answers?
+
+We decided to test it on ourselves.
+
+So we put HubSpot’s AEO tool to the test, focusing on one service and tracking our visibility over eight weeks. We began at 8.62%. By the end of the experiment, that had reached 26.63% (currently 32.76%).
+
+One observation caught our attention early: our visibility across AI platforms did not always reflect how well we were performing in traditional search. 🤔 
+
+That prompted us to look more closely at what the AI tools were seeing, follow HubSpot’s AEO recommendations, and make targeted changes based on what we found.💡  
+
+There were two outcomes to the experiment. One changed how often our brand appeared in AI-generated answers. The other gave us a better understanding of the work that still needs to happen beyond what an AEO tool can tell you. 🔍
+
+📊 We have shared the actual experiment, screenshots, lessons and results in our latest thought leadership article.
+
+Read it here: https://lnkd.in/epJ8bskn
+
+Interested in exploring HubSpot’s AEO tool for your business? Reach out to us. We’d be happy to share what we’ve learned.
+
+#AEO #AIVisibility #HubSpot #GenerativeAI #B2BMarketing"
+13,7500145021086633984,08/31/2026,Raymond Praveen,,Organic,174,118,4,0,0,122,0.7011,"As content becomes easier to produce, audiences are becoming more selective about what they choose to engage with on social media.
+
+The brands that stand out will be those that use AI smartly while keeping human creativity, perspective, and storytelling at the heart of their social presence.
+
+Read the full blog to understand what consumers really expect from brands on social media in 2026.
+
+https://lnkd.in/g9JJDk88
+
+#AIContent #SocialMediaMarketing #ContentStrategy #BrandAuthenticity #DigitalMarketing"
+14,7497635734422728704,08/24/2026,Raymond Praveen,Video,Organic,971,107,20,0,1,128,0.1318,"At Vajra Global, creating a safe, respectful, and inclusive workplace is a shared responsibility.
+
+As part of our annual employee awareness initiative, we recently conducted our POSH Awareness Session, facilitated by Dr. Sujatha Kesh, Psychologist and POSH Trainer, on 19 August 2026.
+
+The session provided employees with an understanding of workplace sexual harassment, reporting mechanisms, the role of the Internal Committee (IC), bystander responsibilities, and the importance of maintaining a culture of dignity and respect for all.
+
+A sincere thank you to Dr. Sujatha for taking the time to conduct this insightful session and for sharing valuable perspectives on workplace respect, inclusivity, and the importance of creating a safe environment for everyone.
+
+At Vajra Global, we remain committed to fostering a workplace where every individual feels safe, heard, and empowered to contribute their best.
+
+Nithya K Pillai, Swetha Sitaraman, Lavanya Chandrasekaran, Raymond Praveen, CecureUs
+
+#POSH #WorkplaceCulture #EmployeeAwareness #SafeWorkplace #Inclusion #RespectAtWork #VajraGlobal"
+15,7494233940220596224,08/15/2026,Raymond Praveen,,Organic,139,1,7,0,0,8,0.0576,"Happy Independence Day!
+
+Today, we celebrate the spirit of a nation built on resilience, innovation, and the courage to shape its own future.
+
+As India marks another year of independence, we honour the visionaries, leaders, and countless individuals whose sacrifices made this freedom possible.
+
+Let us continue to innovate, collaborate, and contribute towards a stronger, smarter, and more prosperous India.
+
+Wishing everyone a proud Independence Day.
+
+#IndependenceDay #HappyIndependenceDay #IndiaAt79 #JaiHind #VajraGlobal #BelieveCreateAchieve"
+16,7493928750292656128,08/14/2026,Raymond Praveen,,Organic,304,24,12,0,0,36,0.1184,"Congratulations to Sowndar karthi on being recognised as Employee of the Quarter at Vajra Global!
+
+As our trusted Umbraco Expert and Full Stack Developer, he has played a pivotal role in delivering robust digital experiences. Over time, he has expanded that expertise into the world of AI-native development, embracing new technologies and finding innovative ways to make our solutions smarter, faster, and more impactful.
+
+From architecting scalable platforms to integrating AI into development workflows, Sowndar consistently demonstrates a forward-thinking approach that helps keep Vajra Global at the forefront of innovation. Equally important is his willingness to share knowledge, mentor team members, and foster a culture of learning and collaboration.
+
+Thank you, Sowndar, for your dedication, leadership, and commitment to excellence. Congratulations on this well-deserved achievement! 👏
+
+#EmployeeOfTheQuarter #TeamVajraGlobal #EmployeeRecognition #UmbracoExpert #VajraGlobal"
+17,7490334855784853504,08/04/2026,Swetha Sitaraman,,Organic,257,1,3,0,0,4,0.0156,"AI is finding its way into every part of the B2B SaaS business. Sales teams use it to personalise outreach. Marketing relies on it for content. Product teams build it into customer experiences. But then, 
+
+Who is actually governing it? 🤔
+
+Forrester predicts that ungoverned AI in commercial applications could erase more than $10 billion in enterprise value by 2026. The damage is not limited to security incidents. It also shows up as poor decisions, compliance gaps, stalled deals and lost customer confidence.
+
+The good news? AI governance does not have to become another heavyweight compliance exercise. With the right ownership, practical guardrails and clear visibility into how AI is being used, it can become a competitive advantage that buyers increasingly expect. 🔍
+
+Our latest blog explores:
+✅ What ungoverned AI looks like in SaaS organisations
+✅ The risks many teams overlook until it's too late
+✅ A five-step playbook to bring AI under control without slowing progress
+
+If AI is already part of your product, marketing or revenue strategy, this is a conversation worth having.
+
+📖 Read the full blog here: https://lnkd.in/gWMzwMBh
+
+#ArtificialIntelligence #AIGovernance #B2BSaaS #SaaS #AI"
+18,7486362147543752704,07/24/2026,Swetha Sitaraman,,Organic,522,5,8,0,0,13,0.0249,"WordPress 7.0 ""Armstrong"" brings far more than a fresh set of features. It introduces the foundations for a future where AI becomes part of how websites are managed, updated, and improved. 🤖
+
+That sounds exciting. But before planning an upgrade, there are a few practical questions every business should answer.
+
+👉 Will your plugins and themes work as expected? 
+👉Are your custom integrations ready? 
+👉Have you considered AI governance, user permissions, and testing in a staging environment? 
+
+These decisions can influence how smoothly your website performs after the upgrade.
+
+Our latest blog looks at what WordPress 7.0 means for businesses, from its shared AI infrastructure and responsive design improvements to stronger development capabilities and a better editing experience for marketing teams.
+
+If WordPress powers your website today, this release deserves a closer look before you schedule your upgrade. A little planning now can help you make better use of what 7.0 offers while avoiding unnecessary disruption. 💡
+
+Read the full blog here:
+🔗 https://lnkd.in/gX_BWKKB
+
+#WordPress #WordPress7 #WebsiteDevelopment #EnterpriseWebsites #AI #MarketingTechnology #BusinessGrowth"
+19,7486007721742204930,07/23/2026,Raymond Praveen,,Organic,328,3,2,0,0,5,0.0152,"How often do you think about the reaction you choose on social media?
+
+For many of us, the default is a simple 👍. It's quick, familiar, and easy. But every reaction tells a slightly different story.
+
+A ❤️ can say, ""I love this""
+A 👏 recognises effort or achievement.
+A 💡 acknowledges a valuable idea or insight.
+A 🎉 celebrates a milestone worth recognising.
+
+Do these reactions actually make a difference? The reaction you choose adds emotion and tells the author how the post connected with you.
+
+For social media marketers, these small signals can reveal what truly resonates with an audience and help shape more meaningful and diverse content, and not just content that yields 👍
+
+So the next time you interact with a post, ask yourself:
+
+Are you just acknowledging it with a thumbs up, or are you choosing the reaction that best reflects what you genuinely feel?
+
+Sometimes, a small click communicates more than we realise.
+
+#LinkedIn #SocialMedia #Engagement #ContentMarketing #PersonalBranding"
+20,7485625125917077504,07/22/2026,Raymond Praveen,,Organic,399,5,20,1,0,26,0.0652,"Celebrating 7 Creative Years of Santhosh Kumar at Vajra Global!
+
+For seven years, Santhosh has brought ideas to life through creativity, thoughtful design, and impactful visual storytelling. His dedication, eye for detail, and ability to consistently create standout work have made him an invaluable part of Team Vajra Global.
+
+Here’s to 7 years of creativity, growth, and inspiring work. Wishing you many more milestones ahead, Santhosh! ✨
+
+#WorkAnniversary #CreativeJourney #TeamVajraGlobal #VajraGlobal #BelieveCreateAchieve"
+21,7483524123759910913,07/16/2026,Swetha Sitaraman,,Organic,235,5,9,0,0,14,0.0596,"Today, on World AI Appreciation Day, we celebrate the curiosity that drives innovation and the people who make AI possible.🔍
+
+Every meaningful AI outcome begins with better questions, thoughtful experimentation, and a commitment to solving real business challenges.💡
+
+At Vajra Global, we help organisations put AI to work across marketing, sales, customer engagement, business operations, and digital experiences. Through AI consulting, GenAI solutions, AI-enabled marketing, and GTM acceleration, we help businesses move from experimentation to measurable impact.
+
+Here's to the researchers, engineers, designers, data specialists, and innovators building AI responsibly, and to every organisation embracing AI with purpose.✨
+
+Happy World AI Appreciation Day! 🤖
+
+#WorldAIAppreciationDay #AI #GenerativeAI #ResponsibleAI #AINative #VajraGlobal #BelieveCreateAchieve"
+22,7480534922277965825,07/08/2026,Swetha Sitaraman,,Organic,554,3,3,0,0,6,0.0108,"AI is becoming part of the CMS itself, not simply an add-on. And the latest Umbraco product update makes that clear. 💡
+
+From AI-powered content workflows and Agent Skills to MCP integration, stronger governance, smarter search, and the launch of Umbraco Compose, the Q1 2026 release introduces capabilities that will influence how developers, content teams, and digital businesses build and manage websites. 🚀
+
+Some of these features are available now. Others are on the roadmap. Either way, they point to a CMS designed for AI-assisted development without giving up control, security, or flexibility.
+
+If you're running Umbraco, planning an upgrade, or simply keeping an eye on where modern CMS platforms are headed, this update is worth your attention.
+
+We've broken down the biggest announcements, explained what they mean in practical terms, and highlighted the updates that deserve a closer look. 📖
+
+Read the full blog here and see what the latest Umbraco release could mean for your website and content operations:
+
+https://lnkd.in/g3dB3fPV
+
+#Umbraco #CMS #WebDevelopment #AI #WebsiteDevelopment"
+23,7479383586006122497,07/05/2026,Raymond Praveen,,Organic,686,31,25,3,0,59,0.086,"Celebrating 5 Years of Excellence at Vajra Global! 🎉
+
+Today, we are delighted to celebrate Priya Ramesh, Customer Experience (CX) Architect in our AI Marketing & Experience (AMX) Team, as she marks an incredible 5-year journey with Vajra Global.
+
+Over the past five years, Priya has consistently demonstrated that exceptional customer experiences begin with thoughtful strategy, deep research, and clear communication. From crafting impactful content and marketing strategies to architecting customer-centric experiences, she has played a pivotal role in helping clients transform complex business challenges into successful outcomes.
+
+What truly sets Priya apart is her unwavering commitment to quality. Her practical approach, resilience under pressure, and ability to navigate evolving challenges have earned the trust of clients and colleagues alike, making her a dependable pillar of the AMX Team.
+
+Beyond her professional accomplishments, Priya is known for her calm presence, thoughtful perspective, and cool attitude.
+
+Five years is a wonderful milestone, reflecting Priya's dedication, curiosity, and relentless pursuit of excellence. Thank you, Priya, for your remarkable contributions and for making a lasting impact on Vajra Global.
+
+Happy 5th Work Anniversary! 👏
+
+#WorkAnniversary #TeamVajraGlobal #VajraGlobal #CXarchitect #AIMarketing #EmployeeRecognition #BelieveCreateAchieve"
+24,7477639426244952064,06/30/2026,Raymond Praveen,,Organic,670,5,4,0,0,9,0.0134,"Have you heard about knowledge debt?
+
+Knowledge debt accumulates when expertise, decisions, processes, customer insights, and operational know-how remain trapped in emails, meetings, documents, and individual employees.
+
+What was previously an efficiency problem has now become an AI problem.
+
+AI systems can only learn from, retrieve, and act upon the knowledge that organisations have made accessible. When critical knowledge remains fragmented or undocumented, AI initiatives often struggle to deliver their full potential.
+
+Many businesses are discovering that successful AI adoption starts long before the technology itself. It begins with creating a structured, connected, and accessible knowledge foundation.
+
+The organisations that solve their knowledge debt problem today may have a significant advantage in the AI-native economy tomorrow.
+
+How much of your organisation's most valuable knowledge is actually available for AI to use?
+
+#AI #KnowledgeManagement #DigitalTransformation"
+25,7475792865537740800,06/25/2026,Swetha Sitaraman,,Organic,333,6,10,0,1,17,0.0511,"🚨 Many organisations are measuring AI progress using the wrong metric.
+
+Tool adoption is easy to see.
+
+Competitive advantage is not.
+
+While many teams are focused on adding more AI platforms, a smaller group of companies is building something far harder to copy: an intelligence layer that gets smarter with every campaign, customer interaction, and closed deal.💡  
+
+As that learning compounds, so does the advantage. What begins as a small lead can become a meaningful gap in pipeline quality, conversion rates, and revenue performance.
+
+In her latest thought leadership article, Deepa Venkataraman, our Head of Innovation & Market Development, examines why some organisations are building intelligence with AI that compounds over time, while others remain stuck in experimentation mode. ⌛  
+
+The article challenges several common assumptions about AI adoption and offers a practical framework for understanding where your business sits on the AI maturity ladder.
+
+If you're responsible for pipeline growth, revenue operations, marketing performance, or GTM strategy, this is a perspective worth exploring.
+
+Read the article:
+https://lnkd.in/gncQWDY3
+
+🔍 One question to take away: Are you building intelligence that compounds, or simply adding more tools to the stack?
+
+#ArtificialIntelligence #RevenueOperations #SalesStrategy #MarketingLeadership #GTM #BusinessStrategy #DigitalTransformation #MarTech"
+26,7474433950703046656,06/21/2026,Raymond Praveen,,Organic,922,47,37,2,1,77,0.0835,"Celebrating 9 Years of Innovation, Growth, Content, and Leadership at Vajra Global!
+
+We are delighted to celebrate Deepa Venkataraman, Head of Innovation & Market Development, as she marks an incredible 9-year journey with Vajra Global.
+
+With a forward-thinking mindset and a passion for AI-native transformation, she has consistently identified new opportunities, forged strategic partnerships, and translated emerging technologies into meaningful business outcomes.
+
+As the Head of Innovation & Market Development, Deepa leads our innovation agenda and new market development practice, shaping how Vajra Global scales into new industries and geographies.
+
+From architecting go-to-market strategies to building innovation pipelines and intelligence frameworks, her work bridges market insights, customer needs, and technology capabilities to drive sustainable growth and long-term impact.
+
+Her ability to blend strategic thinking with innovation has helped position Vajra Global as a future-ready organisation that embraces change and creates value through AI, intelligent automation, and transformative business solutions.
+
+Beyond her professional accomplishments, Deepa is an inspiring example of balance, resilience, and dedication. As a proud mother of two daughters, she gracefully manages the demands of a dynamic leadership role while nurturing her family with equal passion and care.
+
+Thank you, Deepa, for your leadership, passion, and relentless pursuit of innovation. We are proud to celebrate this milestone with you and look forward to achieving many more together.
+
+Happy 9th Work Anniversary! 👏
+
+#WorkAnniversary #TeamVajra #VajraGlobal #Innovation #MarketDevelopment #Leadership #AITransformation #FutureReady #BelieveCreateAchieve"
+27,7474067408249384960,06/20/2026,Raymond Praveen,,Organic,463,16,21,0,0,37,0.0799,"Celebrating 8 Years of Dedication and Leadership at Vajra Global! 🎉
+
+Today, we proudly celebrate Vijay R, Head of Operations and Finance, as he completes an incredible 8-year journey with Vajra Global.
+
+Over the years, Vijay has been the backbone of our operational excellence, ensuring that critical business functions run seamlessly behind the scenes. From managing finance, legal, taxation, and compliance to overseeing invoicing, audits, contracts, and operational processes, he brings precision, accountability, and consistency to every responsibility he undertakes.
+
+What truly sets Vijay apart is his ability to remain calm under pressure while handling multiple functions with remarkable efficiency. His meticulous approach, problem-solving mindset, and unwavering commitment have helped strengthen the foundation of Vajra Global and support the organisation's growth at every stage.
+
+Beyond his professional expertise, Vijay is known for his approachable nature, dependability, and willingness to lend a helping hand whenever needed. Whether coordinating cross-functional activities, supporting teams, or ensuring that every detail is in place, he does it all with humility and a smile.
+
+Eight years is a remarkable milestone, and Vijay's journey stands as a testament to dedication, perseverance, and the invaluable impact one individual can make on an organisation.
+
+Thank you, Vijay, for your steadfast commitment and the countless contributions you have made to Vajra Global over the years. We are proud to celebrate this milestone with you and look forward to many more successes together.
+
+Happy 8th Work Anniversary! 👏
+
+#WorkAnniversary #TeamVajra #VajraGlobal #OperationsLeadership #FinanceExcellence #EmployeeRecognition #BelieveCreateAchieve"
+28,7472254822537224193,06/15/2026,Raymond Praveen,,Organic,811,24,34,2,0,60,0.074,"A Decade of Creativity, Leadership, and Impact at Vajra Global! 🎉
+
+Today, we proudly celebrate Punith, Head of AI Marketing & Experience (AMX), as he marks an incredible decade with Vajra Global.
+
+Over the last 10 years, Punith has been a driving force behind creative excellence. With his calm and cool approach, unwavering dedication, and strong leadership, he has consistently transformed ideas into meaningful results for clients and teams alike.
+
+As the Head of the AMX Team, Punith now plays a key role in building and leading a high-performing team that powers content, design, SEO, AEO, and paid marketing operations. His ability to seamlessly blend creativity, technology, and strategic thinking helps deliver exceptional outcomes.
+
+Beyond his professional achievements, Punith is admired for his cheerful personality, approachable nature, and genuine care for the people around him. Whether it’s bringing the team together over a meal, offering encouragement, or lifting team spirit, he creates a positive and supportive environment wherever he goes.
+
+A decade is more than a milestone. A true testament to commitment, leadership, and the lasting impact one person can have on an organisation and its people.
+
+Thank you, Punith, for 10 remarkable years of dedication, creativity, and friendship. Happy 10th Work Anniversary! 👏
+
+#WorkAnniversary #DecadeOfExcellence #TeamVajra #VajraGlobal #EmployeeMilestone #AIMarketing #EmployeeRecognition #BelieveCreateAchieve"
+29,7471783347871064064,06/14/2026,Raymond Praveen,,Organic,439,14,27,2,0,43,0.0979,"Celebrating 5 Years of Excellence at Vajra Global!
+
+Today, we proudly celebrate Naresh P, our WordPress Lead, on completing an incredible 5-year journey with Vajra Global.
+
+Over the years, Naresh has played a pivotal role in delivering high-performing, secure, and user-centric digital experiences. From leading website design and development projects to executing complex platform implementations across WordPress, WooCommerce, Magento, Shopify, and custom PHP solutions.
+
+His contributions extend beyond development, enhancing website performance, strengthening security, improving user experience, optimising search visibility, and ensuring seamless compatibility across devices and platforms.
+
+Through his dedication to clean coding practices and continuous innovation, he has helped shape impactful digital solutions that create lasting value. A great friend with a cool attitude and always dependable tech expert.
+
+Thank you, Naresh, for your passion, leadership, and unwavering commitment over the past five years. We appreciate everything you bring to the team and look forward to many more milestones together.
+
+Happy 5th Work Anniversary! 👏
+
+#WorkAnniversary #VajraGlobal #EmployeeMilestone #TechnologyLeadership #EmployeeRecognition #BelieveCreateAchieve"
+30,7470839806558732289,06/11/2026,Raymond Praveen,,Organic,130,136,2,0,0,138,1.0615,"The conversation around AI is becoming more practical and outcome-driven.
+Businesses are asking tougher questions around adoption, governance, scalability, and ROI. The organisations that succeed will be those that move beyond isolated use cases and embed AI into their everyday operations.
+
+London Tech Week #AITransformation #BusinessTransformation #AINative #DigitalTransformation #FutureOfWork #EnterpriseAI #VajraGlobal"
+31,7468215070519365632,06/04/2026,Swetha Sitaraman,,Organic,388,3,8,0,1,12,0.0309,"Enterprise leaders are under pressure to move faster, yet website projects often remain one of the slowest initiatives to execute.
+
+The process has traditionally depended on multiple teams working one after another, creating delays that compound over time.
+
+AI is changing that equation.⚡
+
+Not because websites can now be built with a few prompts. Any business can do that.
+
+The bigger change is happening inside the development process itself.
+
+Research, UX, content structuring, design exploration, coding, testing, SEO preparation, and quality checks can now happen simultaneously rather than waiting for one stage to finish before the next begins.
+
+That changes what enterprises should expect from their agency.
+
+⏱️ Faster delivery without cutting corners
+🔍 Better-informed decisions before development starts
+📈 Stronger use of budgets and specialist expertise
+🤖 AI agents working alongside human experts, not replacing them
+
+The agencies that adapt their operating model will look very different from those that simply add AI tools to an existing workflow.
+
+So what should enterprise leaders be asking their agency in 2026?
+
+Our latest article explores how AI-first web development is changing expectations around speed, cost, quality, and the way digital experiences are delivered.
+
+Read the full blog here 👇
+[https://lnkd.in/gAwujYXS](https://lnkd.in/gAwujYXS)
+
+#AI #WebDevelopment #AIAgent #GenerativeAI #MarTech #DigitalExperience"
+32,7467462629658136578,06/02/2026,Raymond Praveen,,Organic,401,9,25,0,0,34,0.0848,"Heading to London Tech Week?
+
+Meet our Founder & CEO, Ganapathy Sankarabaaham, who will be attending London Tech Week on 8th and 9th June and spending the following two weeks across the UK.
+
+As businesses explore the next phase of AI adoption, the conversation is shifting from experimentation to implementation. Organisations are looking for practical ways to embed AI into operations, decision-making, customer engagement, and growth strategies.
+
+At Vajra Global, we're actively helping businesses navigate that journey from AI-powered to AI-native. Through our **AI Innovation Labs**, we work closely with businesses, small and big, to identify and implement AI solutions that deliver real business value.
+
+If you're attending London Tech Week and would like to discuss:
+✅ AI strategy and adoption
+✅ Building an AI-native organisation
+✅ AI opportunities for SMEs
+✅ Business transformation and growth
+
+We'd love to connect.
+
+Drop us a message to arrange a conversation with Ganapathy during his time in the UK.
+
+#LondonTechWeek #AI #AINative #BusinessTransformation #Innovation #SMEs #ArtificialIntelligence #GrowthStrategy #VajraGlobal"
+33,7466035843208536064,05/29/2026,Raymond Praveen,,Organic,230,3,3,0,0,6,0.0261,"Most B2B teams are experimenting with GenAI. Few are operationalising it.
+
+The gap isn't the technology or expertise; it's the strategy and overall vision behind it.
+
+Vajra Global can be the growth partner that helps you build GenAI solutions that are wired directly into your workflows: content operations, lead nurturing, sales enablement, and personalisation at scale, without scaling headcount.
+
+This is more than just using everyday prompts. It's engineering the everyday business.
+
+Ready to move from experimentation to execution?
+👉 [https://bit.ly/4dAUYGm](https://bit.ly/4dAUYGm)
+
+#GenAI #GenerativeAI #AIMarketing #B2BMarketing #VajraGlobal #BelieveCreateAchieve"
+34,7465328185937670144,05/27/2026,Swetha Sitaraman,,Organic,730,113,17,0,0,130,0.1781,"🚀 Building a repeatable GTM engine is one of the biggest priorities for growing startups, and we were delighted to partner with HubSpot For Startups to help founders across APAC take meaningful steps towards that goal through the recent GTM Bootcamp.
+
+Over two interactive 90-minute sessions, founders and senior leaders explored how to move from founder-led sales to a scalable, structured GTM motion. From defining high-value ICPs and identifying high-intent signals to architecting always-on lead flows and investor-ready reporting, the discussions were practical, implementation-focused, and highly engaging with demos and activities.
+
+💡 We loved the quality of participation. The conversations, questions, and shared experiences from the cohort reflected the growing focus startups are placing on building smarter GTM systems powered by data, automation, and AI-assisted workflows.
+
+A huge thank you to all the participants who made this workshop a success. We hope the sessions helped provide a clearer roadmap for building scalable revenue operations and long-term growth foundations.
+
+📈 At Vajra Global, we remain committed to helping businesses strengthen their GTM strategy through HubSpot, AI, and digital growth solutions.
+
+Learn about what we did at the workshop here: [https://lnkd.in/grbTEs-r](https://lnkd.in/grbTEs-r)
+
+🤝 Connect with Vajra Global to explore how we can help you build a scalable, AI-assisted GTM engine.
+
+Rea Kurian Ragini Campion Ganapathy Sankarabaaham Shashidhar Bellur Sabapathy TK Sriram Purushothaman Aravindh Purushothaman Samuel Devapirian Rajashree Arunabhaskar Adarsh Noronha
+
+#VajraGlobal #HubSpot #GTMStrategy #Startups #MarTech #AI #RevenueOperations #DigitalTransformation"
+35,7464903146977320960,05/26/2026,Swetha Sitaraman,,Organic,380,3,4,0,1,8,0.0211,"Most content teams are still measuring visibility the old way. 📊
+
+Rankings. Traffic. Click-through rates.
+
+But AI assistants have introduced another layer of discovery: citations inside AI-generated responses.
+
+And the rules behind citations are different from the rules behind ranking.
+
+In our latest article, Karpagavalli Krishnasamy and Swetha Sitaraman unpack what happens between “being retrieved” and “being cited” inside platforms like ChatGPT, drawing on recent Ahrefs and Semrush research, along with observations from enterprise content programmes we’ve worked on.
+
+A few takeaways:
+• Ranking on page one does not guarantee AI visibility
+• Intent-aligned titles influence whether AI systems even open your page
+• Human-refined content still outperforms purely AI-generated output in critical positions
+• Structured knowledge ecosystems matter far more than high-volume publishing
+
+The teams gaining visibility today are thinking carefully about content structure, topical depth, FAQs, schema markup, and answer-ready formatting.
+
+The article also explores the growing gap between AI-generated content and AI-optimised content strategy - a distinction many organisations are still missing.
+
+👉 Read the full piece here:
+[https://lnkd.in/gc5DdSwu](https://lnkd.in/gc5DdSwu)
+
+🧠 Worth reading for anyone working across SEO, content, MarOps, or demand generation.
+
+#AISearch #AEO #SEO #ContentMarketing #MarTech #B2BContent #GenerativeAI #MarketingOperations"
+36,7463201697536897025,05/21/2026,Raymond Praveen,,Organic,303,125,7,2,0,134,0.4422,"Most companies invest in marketing before investing in the brand itself.
+
+If your visuals are inconsistent, out of style, or unclear, your marketing may not achieve its goals.
+
+Here are 4 visual branding truths shaping the most recognised digital businesses. Swipe through. 👉
+
+Source: Our full blog on visual branding strategy is linked in the comments.
+
+[https://bit.ly/4nGA0sZ](https://bit.ly/4nGA0sZ)
+
+#VisualBranding #BrandStrategy #CreativeDesign #DigitalMarketing #B2BMarketing #VajraGlobal #BelieveCreateAchieve"
+37,7462494421851295745,05/19/2026,Raymond Praveen,,Organic,255,5,4,0,0,9,0.0353,"Myth: More content means better SEO.
+
+Reality: Search engines and AI answer engines reward depth, authority, and relevance. Not volume.
+
+Publishing 10 thin blog posts a month will not outrank one well-structured, expert-led piece that genuinely answers what your audience is searching for.
+
+The brands winning in search today are building growth-driven content, not output targets.
+
+Quality signals authority. Authority earns rankings.
+
+Contact us to know more
+[https://bit.ly/4dzVJyf](https://bit.ly/4dzVJyf)
+
+#SEO #ContentMarketing #AEO #AnswerEngineOptimisation #B2BMarketing #VajraGlobal #BelieveCreateAchieve"
+38,7460566782161051648,05/14/2026,Swetha Sitaraman,,Organic,607,10,11,0,2,23,0.0379,"🚀 HubSpot is rebuilding its Salesforce integration with a new “v2” sync engine.;
+
+The upgrade marks a major backend refactoring designed to deliver faster, more resilient, and more flexible Salesforce data synchronisation for customers.
+
+👉 Key enhancements on the v2 platform include:
+• Enhanced de-duplication using any field
+• Owner field synchronisation
+• Support for unique IDs beyond email addresses
+• Fewer sync errors with faster resolution
+• Inclusion lists for any synced object
+
+HubSpot has already migrated custom objects, tickets, and activities to the v2 engine. Support for company objects is now live, introducing one of the platform’s most requested capabilities - the ability to merge company records in HubSpot while automatically remapping them to Salesforce.
+
+📌 Deal object support is expected in the coming weeks, while work on contact objects will continue through Q2, with a beta planned later this year. HubSpot aims to fully deprecate the legacy sync engine by mid-2027.
+
+💡 This move highlights a broader change taking place across the MarTech ecosystem: businesses now expect integrations to handle larger data volumes, complex workflows, and cleaner synchronisation with fewer operational bottlenecks.
+
+🤝 Looking to optimise your HubSpot–Salesforce integration? Connect with us to explore how we can help your business improve data synchronisation, reduce operational friction, and build a more connected revenue ecosystem.
+
+Ganapathy Sankarabaaham Sriram Purushothaman Aravindh Purushothaman Sabapathy TK Rea Kurian Shashidhar Bellur Adarsh Noronha
+
+#HubSpot #Salesforce #MarTech #CRM #MarketingTechnology #RevOps #DigitalTransformation #HubSpotPlatinumPartner"
+39,7459955163101900800,05/12/2026,Raymond Praveen,,Organic,497,1,6,0,0,7,0.0141,"Unpopular opinion: Most established brands don't need more marketing. They need clearer positioning.
+
+What we see repeatedly:
+→ Campaigns running without a defined ideal customer profile
+→ Content created for volume, not for conversion
+→ Tech stacks growing while pipeline clarity shrinks
+
+More budget only amplifies the positioning problem.
+
+Before you increase spend, answer this: Can your entire sales team articulate your value in one sentence, and does it resonate with the buyers you actually want?
+
+This is exactly where the right growth partner makes the difference.
+
+What is the one positioning question you would most like answered? Drop it below.
+
+#B2BMarketing #MarketingStrategy #BrandPositioning #CMO #VajraGlobal #BelieveCreateAchieve"
+40,7459093893066829824,05/10/2026,Raymond Praveen,,Organic,224,6,12,0,0,18,0.0804,"To every mother who balances meetings and bedtimes, strategy and school runs, ambition and unconditional love:
+
+Happy Mother's Day!
+
+The values we build businesses on: Resilience, care, and long-term thinking, are the values most of us first learned at home.
+
+Today, we honour the mothers who shaped us 🙏
+
+#MothersDay #VajraGlobal #BelieveCreateAchieve"
+41,7457662013968654336,05/06/2026,Swetha Sitaraman,,Organic,381,6,9,0,0,15,0.0394,"Has Martech Reached Its Inflection Point?
+
+📊 The State of Martech 2026 report launched yesterday by chiefmartec and MartechTribe signals a decisive shift. With just 0.79% net growth and a total of 15,505 tools, the industry may be approaching “Peak Martech”. But the headline number hides a deeper story - one of consolidation and reinvention.
+
+New entrants have dropped by 40%, while removals have risen by 13%. Notably, over half of these exits come from the 2010–2019 SaaS cohort. The message is clear: accumulation of tools is giving way to sharper, outcome-driven ecosystems.
+
+🤖 AI is now the new value layer. The focus has moved to context engineering - ensuring systems can interpret data and deliver dynamic, real-time experiences. This is also reshaping categories. CMS and ecommerce are growing again, adapting for machine audiences, while standalone tools like chat and email are being absorbed into broader platforms.
+
+🚀 Meanwhile, “vibe coding” is enabling non-engineers to build bespoke solutions, and AEO is emerging as search behaviour shifts towards AI-driven discovery. Marketing Ops is also stepping up, transitioning into Value Engineering with a stronger link to growth.
+
+Mid-sized companies face the toughest squeeze, caught between AI-native challengers and bundled incumbents.
+
+👉 The next phase of Martech won’t be about features. It will be about context and outcomes.
+
+Let’s connect to explore how your MarTech and HubSpot stack can keep pace with these changes.
+
+Sabapathy TK Sriram Purushothaman Aravindh Purushothaman Ganapathy Sankarabaaham
+
+#MarTech #AI #HubSpot #AEO #DigitalMarketing #MarketingOps #AIinMarketing"
+42,7457399455332343809,05/05/2026,Raymond Praveen,,Organic,315,11,12,0,1,24,0.0762,"Today is #MarTechDay.
+
+Most teams already have the building blocks: CRMs, automation platforms, and analytics stacks. But real impact comes from how these systems are connected and made to work intelligently.
+
+We’re entering a new phase of marketing, and that is AI-native by design.
+
+Where growth platforms can:
+→ Unify data, workflows, and channels
+→ Enable real-time decision making
+→ Personalise experiences at scale
+→ Continuously learn and optimise performance
+
+The shift is clear:
+From managing tools → to building intelligent growth systems
+
+Because modern marketing is about creating platforms that compound outcomes.
+
+At Vajra Global, we work with teams to design and scale platforms that turn fragmented MarTech stacks into cohesive, high-performing systems.
+
+Explore more:
+[https://bit.ly/48FXAQk](https://bit.ly/48FXAQk)
+
+#MarTechDay #MarTech #GrowthPlatforms #AINativeMarketing #MarketingTechnology #AIAgents #MarketingAutomation #B2BMarketing #VajraGlobal #BelieveCreateAchieve"
+43,7456543322073899008,05/03/2026,Raymond Praveen,Video,Organic,2046,288,75,7,7,377,0.1843,"10 years. One journey. A bold new direction ahead!
+
+Vajra Global celebrated Vajra Voyage 2026 at IIT Madras Research Park (IITMRP) on 19th April 2026. It was a reflection of how far we’ve come and where we’re headed next.
+
+As we marked a decade of Vajra Global, the day was filled with moments that truly mattered:
+
+✨ Leadership stories that brought our journey to life
+✨ Honest reflections on the challenges, wins, and evolution
+✨ A clear vision for the future: Going AI-native, growth-driven, and outcome-focused.
+✨ Recognition of the people who made it all possible
+
+Hearing Ganapathy Sankarabaaham and the leadership team share their experiences over the years, and more importantly, their conviction about the AI-native future, set the tone for what lies ahead.
+
+What made it even more special?
+Our remote team members joining in, meeting everyone in person, and turning connections into real relationships.
+
+From conversations to celebrations, from memories to momentum, it was a day that captured the spirit of Vajra Global.
+
+Here’s to building the next decade with sharper focus, stronger systems, and meaningful outcomes.
+
+Sriram Purushothaman, Premannanth Kannan, Sabapathy TK, Pranathy Reddy, Deepa Venkataraman, Sangamithra Rajender, Gokul R, Swetha Sitaraman, Vijay R, Vijaya Kumar A, Ketzi Victoria, Sai Padma Sriya G, Vidya Ragu, Lakshmanan Krish, Nithya K Pillai, Sankarabaaham G, T.N. Nellayappan
+
+#VajraVoyage2026 #10YearsOfVajraGlobal #AINative #GrowthDriven #OutcomeFocused #TeamVajra #BelieveCreateAchieve"
+44,7456171862734188544,05/02/2026,Raymond Praveen,,Organic,413,28,27,0,0,55,0.1332,"🎉 Celebrating 9 Years of Sowndar karthi at Vajra Global! 🎉
+
+Nine years in, and Sowndar’s journey has evolved from being a strong Technologist to becoming a true Architect of modern, intelligent systems at Vajra Global.
+
+From leading as our Umbraco Expert and Full Stack Developer to now embracing the shift towards AI-native development, Sowndar has continuously stayed ahead of the curve.
+
+He’s been at the forefront of integrating AI into our workflows and solutions, bringing smarter automation, sharper problem-solving, and new possibilities to how we build and deliver. His ability to blend deep technical expertise with emerging technologies is helping redefine what our development teams can achieve.
+
+Beyond the code, Sowndar continues to be a trusted mentor and a steady force, guiding teams, elevating standards, and fostering a culture of learning and innovation.
+
+Nine years of consistency. Growth. Evolution.
+And still building forward. 🚀
+
+Here’s to the next chapter of innovation and impact.
+
+#WorkAnniversary #AIInTech #FullStackDeveloper #Umbraco #TeamVajra #VajraGlobal #BelieveCreateAchieve"
+45,7455858538771320832,05/01/2026,Raymond Praveen,,Organic,404,23,17,0,0,40,0.099,"Today, we celebrate the people behind the work.
+
+Labour Day is a reminder that progress in business and life is always due to hard work and team effort.
+
+Growth is built by individuals who show up, think deeply, collaborate, and work with purpose.
+
+To every professional contributing their skills, effort, and passion to make an impact - Happy May Day.
+
+#MayDay #InternationalWorkersDay #LabourDay #VajraGlobal #BelieveCreateAchieve"
+46,7455528544673116162,04/30/2026,Raymond Praveen,,Organic,3500,20,7,3,1,31,0.0089,"One of the biggest misconceptions we still hear:
+“CRM is just a database.”
+
+It’s not. It’s a growth engine.
+A CRM drives automation, personalisation, and revenue.
+It's a platform where business happens.
+
+Configured the right way, a CRM helps you:
+👉 Track and nurture leads
+👉 Automate follow-ups
+👉 Personalise customer journeys
+👉 Align marketing, sales, and service
+👉 Drive revenue, not just store contacts
+
+If your CRM feels like a static database,
+you’re only using a fraction of its potential.
+
+The real value lies in how you use it to create conversations, build relationships, and move opportunities forward.
+
+So, is your CRM an engine or just a database? Drop your comments below 👇
+
+#CRM #Sales #Marketing #CustomerExperience #BusinessGrowth #DigitalTransformation"
+47,7455117107026939905,04/29/2026,Swetha Sitaraman,,Organic,443,3,6,1,0,10,0.0226,"🔍 Search rankings are no longer driven by keywords alone. They’re driven by meaning.
+
+Search engines now read your site more like a knowledge graph than a list of pages. They look for entities, relationships, and context. If your content isn’t structured around that, you’re likely missing visibility you should already have.
+
+✍ In our latest blog, we break down what entity-based SEO actually means in practice, not theory.
+
+You’ll see:
+• Why keywords alone fall short
+• How search engines map entities across your site
+• What internal linking really signals (and what it doesn’t)
+• Where most websites get this wrong without realising it
+
+This isn’t a checklist. It’s a different way of thinking about how your content is understood.
+
+If your SEO efforts feel inconsistent despite doing “everything right,” this might explain why.
+
+👉 Read the full blog here:
+[https://lnkd.in/gq_-BaFn](https://lnkd.in/gq_-BaFn)
+
+#SEO #TechnicalSEO #ContentStrategy #DigitalMarketing #SearchEngineOptimization #Martech"
+48,7454031512343187456,04/26/2026,Swetha Sitaraman,,Organic,842,43,43,1,0,87,0.1033,"Celebrating 7 lucky years of Balaji T at Vajra Global!
+
+Over the years, Balaji has played a key role in transforming complex ideas into simple, meaningful user interfaces. His ability to blend creativity with clarity has helped elevate the quality and consistency of design across web and mobile platforms.
+
+As a mentor and design lead, Balaji continues to inspire the team, uphold high standards, and drive continuous improvement. His growing exploration of AI-driven design further reflects his commitment to evolving with the future of digital experiences.
+
+Here’s to 7 years of creativity, leadership, and design excellence, and to many more milestones ahead. Wishing you continued success, Balaji!
+
+#WorkAnniversary #UIDesign #UXDesign #DesignLeadership #Vajraians #VajraGlobal #BelieveCreateAchieve"
+49,7452239678138781696,04/21/2026,Raymond Praveen,,Organic,774,21,8,0,2,31,0.0401,"Excited to be partnering with HubSpot For Startups on this high-impact session for APAC founders.
+
+If you're looking to move from founder-led sales to a scalable GTM engine, this is built for you.
+
+🔗 Register here: [https://lnkd.in/gzw__6uA](https://lnkd.in/gzw__6uA)
+
+Ganapathy Sankarabaaham, Rea Kurian, Aravindh Purushothaman, Ragini Campion, Shashidhar Bellur, Sabapathy TK, Premannanth Kannan, Sriram Purushothaman, Samuel Devapirian, Rajashree Arunabhaskar"
+50,7450905915471331329,04/17/2026,Raymond Praveen,,Organic,273,4,5,0,0,9,0.033,"Generative AI is about real business impact.
+
+From content creation and automation to personalisation and decision-making, GenAI is transforming how organisations operate. But moving from experimentation to measurable outcomes requires the right approach.
+
+At Vajra Global, we help businesses build, deploy, and scale GenAI solutions that deliver tangible value.
+
+Whether it’s plug-and-play AI accelerators, bespoke solutions, GenAI labs, or strategic consulting, we enable you to turn AI into a true competitive advantage.
+
+Ready to move beyond pilots and build AI that works?
+
+Explore our GenAI services
+[https://bit.ly/3QtBhXH](https://bit.ly/3QtBhXH)
+
+#VajraGlobal #GenerativeAI #AITransformation #EnterpriseAI #DigitalTransformation #AIConsulting #GenAI #BelieveCreateAchieve"
+51,7450818141678657536,04/17/2026,Raymond Praveen,Video,Organic,386,15,12,0,3,30,0.0777,"Still running on Umbraco 8, 10, or even 12?
+
+That “stable” setup might already be costing you!
+
+With older Umbraco versions phasing out and key versions like 16 and 13 approaching End-of-Life (EoL), businesses are facing increasing risks around security, compliance, and scalability.
+
+This is about upgrading and protecting your digital ecosystem from avoidable disruption.
+
+Moving to Umbraco 17 means:
+✔ Faster performance with .NET 10
+✔ Real-time collaboration capabilities
+✔ AI-ready workflows for modern teams
+
+At Vajra Global, we ensure your upgrade is seamless, so you stay secure, compliant, and ready for what’s next.
+
+The migration window is narrowing. The cost of delay is rising. Let’s get ahead of it.
+
+[https://lnkd.in/grwsAXb](https://lnkd.in/grwsAXb)
+
+Sowndar karthi, Abhicheke C, T. Moswin Jebaraj, Parthiban S, Rajashree Arunabhaskar, Sriram Purushothaman, Umbraco
+
+#Umbraco #DigitalTransformation #WebDevelopment #CMS #UmbracoCMS #TechUpgrade #WebsiteSecurity #VajraGlobal"
+52,7450458088693850113,04/16/2026,Raymond Praveen,,Organic,159,5,2,0,0,7,0.044,"🔔Reminder: If your GTM still depends on founder hustle, don’t miss this.
+
+We’re partnering with HubSpot For Startups for a live session:
+From Founder-Led to Always-On: Your 2026 GTM Blueprint
+🗓 April 22nd | ⏰ 11 AM IST
+
+In 60 minutes, learn how to build an AI-assisted, always-on GTM engine, with real workflows led by Ganapathy Sankarabaaham and Ragini Campion
+
+Plus, a chance to join an exclusive 2-week GTM Bootcamp with Vajra Global Consulting Services LLP and HubSpot
+
+🔗 Register now
+[https://lnkd.in/gzw__6uA](https://lnkd.in/gzw__6uA)
+
+Sriram Purushothaman, Samuel Devapirian, Aravindh Purushothaman, Swetha Sitaraman, Rajashree Arunabhaskar, Premannanth Kannan, Sabapathy TK, Shashidhar Bellur
+
+#Startups #GTM #Growth #HubSpot #MarTech #Founders"
+53,7450049836755881984,04/15/2026,Swetha Sitaraman,,Organic,372,12,7,0,1,20,0.0538,"🚀 HubSpot Spring 2026 Spotlight: The Rise of Context-Driven AI
+
+HubSpot introduced its Spring 2026 Spotlight updates yesterday, signalling a clear direction: AI that understands your business context, not only your data.
+
+Here are the key updates that matter:
+
+• HubSpot AEO – Helps brands track and improve visibility in AI-driven search and responses.
+• Breeze Assistant for Loop Marketing – Uses CRM context to plan and launch campaigns faster with built-in guidance.
+• Prospecting Agent – Identifies buying signals, builds target accounts, and drafts personalised outreach at scale.
+• Smart Deal Progression – Analyses calls and deal history to suggest next steps, updates, and follow-ups automatically.
+• Customer Agent – Resolves a large share of support queries using full customer context across channels.
+• Data Enrichment – Automatically fills and updates contact records to improve targeting and personalisation.
+
+Taken together, these updates point to a move from isolated AI features to context-aware systems embedded across marketing, sales, and service.
+
+For businesses, this changes how GTM teams operate. There is less manual effort, more informed actions, and tighter alignment across the funnel.
+
+👉 Explore the full release here: [https://lnkd.in/gSW4a8yu](https://lnkd.in/gSW4a8yu)
+
+If you’re looking to translate these updates into real pipeline impact, let’s connect and explore how we can support your HubSpot journey.
+
+Premannanth Kannan Sabapathy TK Sriram Purushothaman Aravindh Purushothaman Ganapathy Sankarabaaham Rea Kurian
+
+#MarTech #HubSpot #AI #RevOps #CustomerExperience #HubSpotBreezeAgents #AEO"
+54,7449660226435452928,04/14/2026,Raymond Praveen,,Organic,855,40,33,3,2,78,0.0912,"Wishing everyone a joyful and prosperous Tamil New Year!
+
+May this new beginning bring renewed energy, fresh opportunities, and continued growth for you and your loved ones. As we step into a new year, it’s a time to reflect, reset, and move forward with positivity and purpose.
+
+Happy Tamil New Year!
+இனிய தமிழ் புத்தாண்டு நல்வாழ்த்துக்கள்!
+
+#TamilNewYear #NewBeginnings #FestiveGreetings #VajraGlobal #BelieveCreateAchieve"
+55,7448920332754739200,04/12/2026,Raymond Praveen,,Organic,419,34,12,2,1,49,0.1169,"5 years of driving impact in B2B marketing, today we celebrate Rea Kurian and her journey with Vajra Global.
+
+Over the years, Rea has brought a strong blend of strategic thinking and technical expertise to highly specialised industries. With experience spanning content, sales, and now MarTech, she brings these together to deliver well-rounded strategies that create real value.
+
+From shaping global GTM strategies to working across demand generation and sales enablement, she consistently delivers measurable results. As a #SixSigmaGreenBelt, she brings a structured, process-driven approach that strengthens outcomes.
+
+Beyond work, she enjoys playing the keyboard and ukulele, along with exploring new destinations and scenic drives.
+
+Here’s to many more milestones and continued impact ahead. Wishing you continued success, Rea!
+
+#WorkAnniversary #B2BMarketing #MarTech #Vajraians #VajraGlobal #BelieveCreateAchieve #MarTechExpert"
+56,7448351248061427712,04/10/2026,Raymond Praveen,,Organic,453,17,10,0,3,30,0.0662,"If your growth depends on founder hustle, it’s time to rethink your GTM.
+
+Too many startups are stuck in a cycle where every lead, every deal, and every follow-up depends on the founder.
+
+We’re partnering with HubSpot for a high-impact session designed to change that 👇
+
+From Founder-Led to Always-On: Your 2026 GTM Blueprint 🚀
+🗓 April 22nd
+⏰ 11 AM IST | 1:30 PM SGT | 4:30 PM AEST
+
+In just 60 minutes, you’ll learn how to build an AI-assisted, always-on GTM engine used by high-growth APAC startups.
+
+Meet your Experts: Ganapathy Sankarabaaham, Ragini Campion
+
+What makes this different?
+
+✔ Live HubSpot build (not just slides)
+✔ Real workflows you can replicate immediately
+✔ Clear GTM maturity insights
+✔ Metrics that actually matter to Series A investors
+
+If you’ve already got a product in market and are ready to scale - this is for you.
+
+🔗Save your spot now
+[https://lnkd.in/gzw__6uA](https://lnkd.in/gzw__6uA)
+
+And that’s just the beginning ...
+
+A selected group of founders will be invited to an exclusive 2-week GTM Bootcamp, where you’ll build your entire GTM engine with hands-on support from Vajra Global Consulting Services LLP and HubSpot For Startups
+
+#GTMStrategy #Startups #Founders #HubSpot #MarTech #B2BMarketing #GrowthStrategy #DemandGeneration #StartupGrowth #APACStartups #SalesAndMarketing #AIinMarketing #GoToMarket
+
+Sriram Purushothaman, Samuel Devapirian, Aravindh Purushothaman, Swetha Sitaraman, Rajashree Arunabhaskar, Premannanth Kannan, Sabapathy TK, Rea Kurian Shashidhar Bellur"
+57,7448007141103140864,04/09/2026,Raymond Praveen,,Organic,361,225,12,0,0,237,0.6565,"Most AI projects fail because of the wrong approach.
+
+Endless pilots, unclear ROI, and lack of ownership keep organisations stuck in experimentation mode.
+
+The teams getting it right?
+They focus on outcomes, not tools, and treat AI as core infrastructure.
+
+If you’re still experimenting, it’s time to rethink.
+
+Build AI right with Vajra Global.
+[https://bit.ly/4tHLr5D](https://bit.ly/4tHLr5D)
+
+#VajraGlobal #GenerativeAI #AITransformation #EnterpriseAI #BusinessStrategy"
+58,7447218920081584129,04/07/2026,Swetha Sitaraman,,Organic,257,2,3,0,0,5,0.0195,"⚙️ We put the WordPress AI Assistant through a real-world test.;
+
+There’s a growing belief that AI can take you from idea to live website in minutes. We wanted to see how that holds up when the requirements are layered, structured, and closer to how teams actually build.
+
+So our SMEs Naresh P and Saradha Priya tested it across two scenarios:
+A conversion-focused SaaS homepage and a more flexible personal blog.
+
+What we found was interesting. 🔍;
+
+The assistant is quick to get you started. You’re not dealing with a blank canvas. Layouts appear almost instantly, and for simpler use cases, that speed is genuinely useful.
+
+But as soon as structure and continuity matter, things start to break. Sections need to be built piece by piece. Flow doesn’t always carry through. And small refinements can create unexpected issues.;
+
+So where does it fit?
+
+Not as a replacement for design and development workflows. But as a useful layer within them, especially for prototyping and ideation. 💡;
+
+We’ve broken down exactly where it works, where it struggles, and how teams can realistically use it today.
+
+🔗 [https://lnkd.in/gwHYJiFs](https://lnkd.in/gwHYJiFs)
+
+#WordPress #AIinWebDevelopment #MarTech #DigitalExperience #WebDevelopment #AI"
+59,7446460819237826560,04/05/2026,Raymond Praveen,,Organic,307,20,18,0,0,38,0.1238,"Celebrating 5 years with Vajra Global, Joshua P has been a key force bringing ideas to life through compelling visuals and engaging motion.
+
+As a Senior Multimedia Designer, his expertise across 3D character design, motion graphics, and video editing has added depth and dynamism to our digital presence. Creativity that moves, designs that tell stories, and visuals that leave an impact.
+
+With a strong creative instinct and an eye for detail, Joshua consistently delivers work that blends imagination with storytelling
+
+Here’s to 5 years of creativity and innovation, and to many more ahead. Wishing you continued success, Joswa!
+
+#WorkAnniversary #CreativeTeam #Vajraians #VajraGlobal #BelieveCreateAchieve #DesignTeam"
+60,7445815580005154816,04/03/2026,Raymond Praveen,,Organic,294,6,16,0,0,22,0.0748,"We are honoured to receive the Safe Workplace Award from CecureUs for 2025–2026, marking our third consecutive win.
+
+Announced at the 5th Edition CecureUs Awards for Safe, Inclusive & Healthy Workplaces on 2 April 2026, this recognition reflects our continued commitment to building a workplace where safety, respect, and inclusion are non-negotiable.
+
+With 240+ nominations and 70 organisations shortlisted for the jury round, this achievement highlights Vajra Global’s consistent focus on fostering a culture rooted in strong values, employee wellbeing, and ethical workplace practices that go beyond compliance.
+
+At Vajra Global, we believe a safe workplace is the foundation for growth, innovation, and trust, and we remain committed to strengthening it every day.
+
+#VajraGlobal #SafeWorkplace #CecureUs #PoSH #WorkplaceCulture #EmployeeWellbeing #HRLeadership #InclusiveWorkplace #BelieveCreateAchieve"
+61,7445057443006668800,04/01/2026,Raymond Praveen,,Organic,309,0,4,0,0,4,0.0129,"Is #AI changing how we work, or forcing us to rethink what work actually is?
+
+A lot of what we’re seeing today feels like optimisation, not transformation.
+The real change lies in how we rethink roles, decisions, and capabilities.
+
+Our Founder & CEO, Ganapathy Sankarabaaham, will be sharing his perspectives at a panel discussion tomorrow. A conversation that goes beyond trends to what truly drives transformation.
+
+#FutureOfWork #WorkplaceTransformation #BelieveCreateAchieve"
+62,7444979831269937152,04/01/2026,Raymond Praveen,,Organic,380,23,15,0,1,39,0.1026,"Today, we celebrate 5 years of Abhicheke’s journey with Vajra Global.
+
+As a skilled Umbraco Expert and Developer, Abhicheke has consistently contributed to building powerful, user-focused digital solutions. His work reflects a strong balance of technical expertise and strategic thinking, helping deliver seamless experiences across a wide range of platforms.
+
+From developing customised web solutions to supporting broader digital initiatives, his holistic approach and commitment to quality have made a meaningful impact on our projects and clients alike.
+
+5 years of quiet impact, strong execution, dependable contribution, and many more to come. Wishing you continued success, Abhicheke C!
+
+#WorkAnniversary #TeamGrowth #UmbracoTeam #WebDevelopment #Vajraians #VajraGlobal #BelieveCreateAchieve"
+63,7444949217535590400,04/01/2026,Raymond Praveen,,Organic,523,20,27,0,0,47,0.0899,"Today, we celebrate 8 incredible years of Ranjith Kumar’s journey with Vajra Global.
+
+Over the years, Ranjith has played an important role in strengthening our digital presence, combining deep SEO expertise with a sharp understanding of marketing operations. His ability to adapt, analyse, and execute with precision continues to create meaningful impact across our initiatives.
+
+What truly sets him apart is his consistency, reliability, and quiet commitment to doing things the right way. As a teammate, he’s someone you can always count on. As a professional, he continues to raise the bar.
+
+Here’s to 8 years of growth, contributions, and continued excellence and to many more milestones ahead. Wishing you continued success, Ranjith!
+
+#WorkAnniversary #TeamGrowth #SEOexpert #AEOexpert #Vajraians #VajraGlobal #BelieveCreateAchieve"

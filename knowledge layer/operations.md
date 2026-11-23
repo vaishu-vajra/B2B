@@ -41,7 +41,7 @@ Event ID; event name/type; confirmed date/time/timezone; content required; targe
 
 ## K7.4 Operating rules
 
-- A calendar entry is not automatically an approved post. For the Vajra pilot, use the user-directed weekly dates without separate calendar reconciliation; confirm the actual publication time and page access in Publish and Verify.
+- The designated approver approves the entire calendar version in one decision. Once every post on that version is approved and has a complete brief, Post Writer drafts every row in calendar order. Exact final copy is approved separately at the publication gate. For the Vajra pilot, use the start date, end date, and post count to generate proposed dates. Confirm the actual publication time and page access in Publish and Verify.
 - Check awareness-day relevance to Vajra's audience.
 - Verify employee milestones before publication.
 - Confirm events, client announcements and campaigns with an owner.

@@ -1,6 +1,6 @@
 ---
 name: post-quality-analyst
-description: Reviews completed text-only LinkedIn company-page posts against selected briefs or calendar items and supplied approved brand, audience, claims, permissions, writing standards, and quality rubrics. Assesses factual claims and permissions, brand and audience fit, copy requirements, rubric criteria, and overlap with available prior post text. Produces an evidence-based report with findings and an independent PASS, REVISE, or BLOCKED result. Excludes drafting, creative assets, human approval decisions, and publishing.
+description: Reviews completed text-only LinkedIn company-page posts in a complete draft batch, checking each against its calendar item and supplied approved brand, audience, claims, permissions, writing standards, and quality rubrics. Assesses factual claims and permissions, brand and audience fit, copy requirements, rubric criteria, and overlap with available prior post text. Produces an evidence-based report with an independent PASS, REVISE, or BLOCKED result for each item. Excludes drafting, creative assets, human approval decisions, and publishing.
 ---
 
 # Post Quality Analyst
@@ -22,19 +22,21 @@ Use descriptive names for the approved guidance and records supplied in the cont
 - Claims supplied for the active post and their source context; no separate claim evidence or approval is required.
 - Target audience definition relevant to the post.
 - Applicable quality rubric.
-- The period brief and the selected item brief or calendar row.
+- The period brief and every corresponding item brief or calendar row. Carry the calendar approval as context where supplied. Review copy independently and do not look for individual drafting approval labels.
 
 The context package should identify selected records and versions, permission/freshness checks, gaps, conflicts, and its Ready/Limited/Blocked verdict. For a pilot run without an assembler, use the supplied current approved knowledge material to locate relevant guidance, then check their status, permissions, and review dates before applying the same verdict rules. Do not treat a missing context package as an error in that pilot mode when the index and necessary records are supplied.
 
 If required guidance or the submission itself is missing, do not invent a rule or assume the missing material passes. Report what is missing and whether review is blocked or limited.
 
+## Stage input handoff
+For this project, use `workflow_inputs.json` in the project’s `api_pipeline/` folder as the stage input map. Post Quality Analyst uses the whole `context/period_brief.md`, `knowledge layer/knowledge_index.md`, `brand.md`, `operations.md`, and `learning.md`; `claims.md` is optional when relevant. It requires the Brief Qualifier readiness/handoff, the full Content Planner calendar and item briefs, and the full Post Writer draft batch with exact copy and relevant checks. Ignore a carried-over item selector for a batch review. The API retains source paths and may pass only those sections; omitted sections are not evidence that information is absent from the source. A prior analyst result is optional only for a revision. Use explicitly supplied paths; do not search for or substitute a different run. Use `learning.md` for authoritative metrics, rules and rubric. Historical post captions and feedback are supplied only as selected, budget-capped excerpts from `learning_posts.csv` and `learning_feedback.csv`; never load or paste a full CSV.
 ## Inputs
 
 ### Required
 
 - Client, project, and LinkedIn channel identity.
-- The exact post copy submitted for review.
-- The period brief and selected item brief or calendar row (or IDs with access to them).
+- The full Post Writer draft batch. Match each exact draft to its calendar item identifier. Review all available, unambiguous matches. Report a missing, duplicate, or mismatched draft as BLOCKED for that item. An explicitly submitted single-post report remains valid for a single-post review if there is no batch to review.
+- The period brief and corresponding item briefs or calendar rows (or IDs with access to them).
 - A context package with its verdict; or, in pilot mode without an assembler, the knowledge index and relevant approved knowledge material.
 
 ### Helpful
@@ -49,13 +51,13 @@ Review only the submitted LinkedIn post copy. Do not request or assess images, c
 
 ### Current pilot scope
 
-For this pilot, compare the submitted post text with available LinkedIn post copy in learning.md for close repetition or overlap. Do not review creative assets. Use supplied Published dates to describe the dates of source posts; historical copy does not become stale solely because the run date changes. If text coverage or a reliable match is incomplete, state the scope of the comparison or mark it partially assessed. This limitation alone does not require REVISE or BLOCKED. Treat feedback records as evidence of comments or corrections, not formal rules unless approval is recorded. Use feedback as optional context; its presence, absence, open/closed/unknown status, or incomplete metadata must not determine the independent QA result.
+For this pilot, compare the submitted post text with available selected LinkedIn post copy excerpts for close repetition or overlap. Do not review creative assets. Use supplied Published dates to describe the dates of source posts; historical copy does not become stale solely because the run date changes. If text coverage or a reliable match is incomplete, state the scope of the comparison or mark it partially assessed. This limitation alone does not require REVISE or BLOCKED. Treat feedback records as evidence of comments or corrections, not formal rules unless approval is recorded. Use feedback as optional context; its presence, absence, open/closed/unknown status, or incomplete metadata must not determine the independent QA result.
 For this text-only Vajra pilot, check LinkedIn post copy against the 60–150 word body target, short paragraphs, one core idea, one CTA, up to three approved hashtags, and the 3,000-character maximum. Do not require AI-content disclosure. Pass any claim-specific disclaimer concern to human final-copy approval rather than requiring separate claim approval.
 
 ## Workflow
 
 1. **Check the review inputs.** Confirm the selected brief and post copy are available. Do not require separate claim evidence or permission records for supplied claims. Route potential accuracy, contradiction, or disclosure concerns to human final-copy approval; only missing non-claim review inputs can make the review incomplete.
-2. **Confirm the review scope.** Record the post/item identifier, copy version, and brief/context versions where provided. Compare the submitted text with the selected calendar row and item brief: objective, audience, message/angle, CTA, format, and slot. Report deviations; do not silently change the brief.
+2. **Confirm the review scope.** Count and match the calendar items to the complete batch before reviewing. Apply steps 3–8 independently to each draft in calendar order. Record its item identifier and copy version where provided. Compare the submitted text with the selected calendar row and item brief: objective, audience, message/angle, CTA, format, and slot. Report deviations; do not silently change the brief.
 3. **Check supplied claim fidelity.** Confirm the draft preserves claims supplied for the current pilot. Do not require separate evidence, claim approval, or reuse approval. Record potential accuracy, contradiction, disclosure, or permission concerns for human final-copy approval; they do not by themselves cause REVISE or BLOCKED.
 4. **Check brand and audience fit.** Compare the copy with approved voice, writing, and audience guidance. Check clarity, tone, relevance, CTA, and accessibility requirements only where the relevant guidance or rubric defines them. Do not invent brand rules.
 5. **Score against the supplied quality rubric.** Use the supplied rubric and its scoring anchors. Report each applicable dimension, score, and rationale. If the rubric is missing or lacks an anchor for a dimension, mark it Not assessed; do not create replacement thresholds.
@@ -84,26 +86,31 @@ Claims supplied in the active brief or project records are final for this workfl
 
 ## Output format
 
-Return a concise, user-facing review. Lead with the independent QA result and a plain-language summary. List only actionable findings; do not repeat the entire source inventory, rubric, or post unless a corrected version is requested. Keep the review text-only.
+Return one report covering every calendar item in order. Lead with the number reviewed and the counts for PASS, REVISE, and BLOCKED. Use one heading per item in the exact form `## Item N — Calendar topic` so publishing can select the matching result. Retain the concise per-item format below. List only actionable findings; do not repeat the entire source inventory, rubric, or post unless a corrected version is requested. Keep the review text-only.
 
 ```markdown
-# Post Quality Review — [topic or item]
+# Post Quality Review — [calendar version]
+
+**Batch summary:** [Total, reviewed, counts by result.]
+
+## Item 1 — [calendar topic]
 
 **Result: PASS / REVISE / BLOCKED**
 **Summary:** [What the result means and the main reason.]
 
-## Findings
+### Findings
 | Priority | What needs attention | Why | Suggested change |
 |---|---|---|---|
 
-## Claim or permission issues
+### Claim or permission issues
 [Include only factual claims or permissions that need attention. If none, say “None identified.”]
 
-## Next step
+### Next step
 [State whether the post is ready for human final-copy approval or needs revision for a non-claim copy issue. Do not request extra claim evidence or approval.]
 ```
 
-Omit empty sections and table rows. If there are no actionable findings, say so plainly and recommend human final-copy approval. Do not let upstream verdicts determine this independent result. For BLOCKED, identify the missing non-claim input. Claim concerns are routed to human final-copy approval. Do not reproduce run IDs or full version inventories unless the user asks.
+Repeat the item section for each calendar row, including blocked items. Report the rubric scores per item and compare with supplied historical excerpts and with other drafts in the same batch where relevant. Omit empty sections and table rows. If there are no actionable findings, say so plainly and recommend human final-copy approval. Do not let upstream verdicts determine this independent result. For BLOCKED, identify the missing non-claim input. Claim concerns are routed to human final-copy approval. Do not reproduce run IDs or full version inventories unless the user asks.
 
 ## Run artifact storage
 Save the final QA report and run record in the project’s `output/` folder. Name the file `<skill_name>_<MM>_<DD>_<version>.md`, for example `post_quality_analyst_reviewer_11_11_01.md`. Start with version `01` and increment it for each additional run of this skill on the same date.
+

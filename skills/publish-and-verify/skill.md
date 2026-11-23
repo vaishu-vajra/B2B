@@ -11,11 +11,13 @@ Publish the final LinkedIn post only after its exact copy has received human app
 
 For the current Vajra pilot, the publishing scope is text-only LinkedIn post copy. Do not request, require, publish, or verify images, carousels, videos, captions for media, alt text, or other creative materials.
 
+## Stage input handoff
+For this project, use `workflow_inputs.json` in the project’s `api_pipeline/` folder as the stage input map. Publish and Verify uses the whole `knowledge layer/knowledge_index.md`, `operations.md`, and compact `learning.md`; the period brief, brand, and claims files are optional when relevant to the run. It receives the selected Content Planner calendar/item sections and Post Quality Analyst result/findings/next-step sections; the Post Writer exact-copy section is optional supporting context. Use explicitly supplied paths; do not search for or substitute another run. Use the compact `learning.md` core; never load either learning CSV for this stage.
 ## Required inputs
 
 - Fresh context package assembled specifically for the Publish and Verify stage.
-- Exact final post copy and its approved version.
-- Approval status and the approval confirmation for that exact copy.
+- Exact final post copy and its approved version for the selected calendar item. If using a Post Writer or QA batch, match the draft and QA result by item identifier to the selected calendar row.
+- Approval status and the approval confirmation for that exact copy. Whole-calendar approval covers drafting scope. Confirm final-copy approval from the explicit decision for this exact text.
 - Post or calendar item reference, topic, content pillar, and text-post format.
 - LinkedIn company page identity.
 - Scheduled publication date and time, timezone, relevant calendar record, restrictions, dependencies, and blackout dates.

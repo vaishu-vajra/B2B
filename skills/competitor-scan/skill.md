@@ -12,6 +12,8 @@ This scan is optional supplemental research when the current project already has
 
 Research every competitor already listed in the approved market records. When a scan runs, also research competitors supplied by the user and discover relevant additional candidates based on company positioning, services, target audiences and markets. Separate approved competitors, user-supplied targets and discovered candidates. Distinguish observations, interpretations and hypotheses, and identify potential differentiation opportunities only when company capabilities and required evidence support them.
 
+## Stage input handoff
+For this project, use `workflow_inputs.json` in the project’s `api_pipeline/` folder as the stage input map. Competitor Scan uses the whole `knowledge layer/knowledge_index.md` and `market.md`; `context/period_brief.md` and `brand.md` are optional when selected for the run; `learning.md` is required by the stage map. A previous Competitor Scan output is needed only when the user requests comparison with an earlier scan. Use explicitly supplied paths; do not search for or substitute another run. Use the compact `learning.md` core; never load either learning CSV for this stage.
 ## 2. Input
 
 ### 2.1 Research Context
@@ -294,3 +296,4 @@ Provide the final readiness verdict:
 Clearly explain the reason for the final verdict.
 ## Run artifact storage
 Save the final intelligence brief and run record in the project’s `output/` folder. Name the file `<skill_name>_<MM>_<DD>_<version>.md`, for example `competitor_scan_11_11_01.md`. Start with version `01` and increment it for each additional run of this skill on the same date.
+

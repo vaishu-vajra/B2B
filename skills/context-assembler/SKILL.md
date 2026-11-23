@@ -13,13 +13,15 @@ Run Context Assembler separately immediately before every downstream skill execu
 
 This skill assembles context; it does not write or review content, calculate the Knowledge Readiness Score (KRS), approve records, resolve conflicts, modify knowledge files, publish, or change access rights. It contains no client-specific facts. Use the supplied knowledge layer, stage contract, and run inputs.
 
+## Project stage input map
+For this project, `api_pipeline/workflow_inputs.json` defines the whole knowledge files and prior stage outputs supplied for each receiving stage. Assemble only the listed files for the selected stage. Prior outputs must be explicitly named for this run; never select a file by guessing which output is latest or substitute another run. Report required prior outputs that are absent. A supplied prior output may contain only selected Markdown sections; omitted sections are not evidence that information is absent from its source. The stage map requires the compact `learning.md` core for every workflow stage. For Post Writer and Post Quality Analyst, include only the API-selected caption and feedback excerpts from the two CSVs in the changing run context. Content Planner may receive only dates and opening lines from posts published in the last 60 days. Never include a full CSV. Preserve the approximately 3,000-token CSV excerpt budget and mark truncated fields.
 ## Inputs 
    
 ### Required
 
 - Workflow-stage name, run ID, client/project identity, channel, and period where applicable.
 - The approved stage contract and policy version. Use the stage requirements below when they are the active workflow contract. If the requested workflow stage or active contract is unclear, do not invent one; report the gap.
-- The knowledge index and source files or atomic record register, with source names and versions where available.
+- The mapped source files or atomic record register, with source names and versions where available. Include the knowledge index for stages that require it. For Content Planner, use the mapped files' own metadata for status, scope, and freshness checks.
 - Permission and reuse-scope information for the records and the requesting stage.
 - The live inputs required by the stage, such as a period brief, calendar slice, or earlier approved stage output.
 - Record metadata needed to check status and freshness: approval status, source, owner, approval date, review date or valid-until date, and applicable refresh window.
@@ -42,18 +44,18 @@ Use this table to select the stage's required information, helpful information, 
 | Readiness and account | LinkedIn company-page identity (URL, stable ID, and company-vs-personal status); current page access, admin and publishing rights; approval chain with approver, backup, client sign-off rules and approval deadlines | Current performance baseline from native LinkedIn data when assessing a current-performance claim | Re-verify page identity and active rights. Apply the 90-day window to current-performance reporting only; do not age fixed historical records based on run date. |
 | Social approach | Approved company positioning and message pillars; project target customer profile and buying roles; audience needs and pains; project objectives and chosen primary KPI with its measurement definition | Current performance baseline if relevant; approved competitor set | For this pilot, fresh industry or competitor research is not required; use the approved competitor set and do not lower readiness because newer research is absent. Target customer profile no older than 6 months |
 | Period brief and intelligence | Period objectives; one selected primary KPI with its measurement definition; and the baseline/target stated in the current period brief | Approved competitor set | For this pilot, approximately 5,700 LinkedIn organic impressions across six posts is the user-directed target, not the baseline. The approved baseline is the 63-record post-level dataset in learning.md, with Published dates from April–October 2026; mean 489.3 and median 381 impressions per record. Historical datasets are records of their stated reporting periods and do not age out based on the current run date. Preserve their dates and caveats for performance review. Analyze themes or formats only when records can be reliably matched to those attributes. Sourced audience-language research remains waived. No separate Competitor Scan or fresh industry/competitor research is required. Feedback availability, absence, or status is not required for the Brief Qualifier context verdict. |
-| Calendar and item briefs | Qualified period brief; approved content pillars; project scope (cadence, formats, languages, exclusions); schedule supplied in the brief/run inputs; confirmed event or blackout constraints when relevant | Subject-matter expert topics; relevant events in the planning month | When assembling for Content Planner, include the user-provided historical pillar distribution from the “Content pillars and historical mix” section of brand.md when relevant: 63 total posts; displayed pillar counts are AI and Innovation 14, Growth and GTM 7, Technology and Expertise 18, People and Culture 23. Treat these as historical posting-volume counts, not impression performance. The displayed counts sum to 62; identify one post as outside the displayed breakdown and do not infer its pillar. For the Vajra pilot, use the dates in the user-directed weekly plan without requiring a separate calendar reconciliation; keep planning dates distinct from actual publication status. Production/review capacity and turnaround are not planning requirements and their absence must not lower readiness. Continue to respect confirmed deadlines, dependencies, blackout dates, and required human review/approval |
-| Copy and claims | Approved brand positioning, voice, writing rules, historical LinkedIn posts in learning.md as style/structure and overlap source, supplied final claims, and selected item brief | Audience-language examples and a separate writing sample are not required | Claims need no separate approval or evidence gate; route possible concerns to human final-copy approval |
+| Calendar and item briefs | Qualified period brief; approved content pillars; project scope (cadence, formats, languages, exclusions); publishing start date, end date and post count supplied in the brief/run inputs; confirmed event or blackout constraints when relevant | Subject-matter expert topics; relevant events in the planning month | When assembling for Content Planner, include the user-provided historical pillar distribution from the “Content pillars and historical mix” section of brand.md when relevant: 63 total posts; displayed pillar counts are AI and Innovation 14, Growth and GTM 7, Technology and Expertise 18, People and Culture 23. Treat these as historical posting-volume counts, not impression performance. The displayed counts sum to 62; identify one post as outside the displayed breakdown and do not infer its pillar. For the Vajra pilot, pass the publishing start date, end date and post count to Brief Qualifier and Content Planner. When supplied, pass the API-calculated proposed slots to Content Planner. Use the publishing start and end dates as the single active period for the brief and calendar. For Brief Qualifier and Content Planner, block a publishing range whose start date is before today in India time and request a new range. Flag other actual date conflicts. Production/review capacity and turnaround are not planning requirements and their absence must not lower readiness. Continue to respect confirmed deadlines, dependencies, blackout dates, and required human review/approval |
+| Copy and claims | Approved brand positioning, voice, writing rules, selected historical LinkedIn post excerpts from `learning_posts.csv` as style/structure and overlap source, supplied final claims, and selected item brief | Audience-language examples and a separate writing sample are not required | Claims need no separate approval or evidence gate; route possible concerns to human final-copy approval |
 | Assets | Approved brand guidelines; assets whose usage rights are recorded; current platform specifications | None specified | Platform specifications no older than 90 days |
 | Quality review | Supplied final claims, approved brand voice and writing rules, quality rubric | Source evidence or permission notes when useful | Do not require separate claim-level approval or evidence; route concerns to human final-copy approval |
 | Approval and publishing | Approval chain; verified LinkedIn page access and publishing rights; CTA destinations and tracking-link rules | None specified | Re-verify page rights and approval chain at release |
 | Community management | Current response and escalation playbook with contacts; approved company facts | Audience objections | Response playbook must be current |
 | Measurement | Definition and current reporting for the single KPI selected in the approved brief | Past performance reports, if needed for comparison | For the current Vajra pilot, measure LinkedIn organic impressions only; do not add secondary KPIs. Preserve the dataset's reporting period and source caveats. |
-| Review and improvement | Current-cycle measurement report, when required by the stage contract | Current-cycle feedback or rework records, if supplied | Use supplied feedback as context where relevant. A feedback list or current open/closed status is not a readiness prerequisite; its presence, absence, status, or incomplete metadata alone does not lower the verdict. Historical comments in learning.md remain records of their stated dates, not current open feedback or formal rules unless separately approved. |
+| Review and improvement | Current-cycle measurement report, when required by the stage contract | Current-cycle feedback or rework records, if supplied | Use supplied feedback as context where relevant. A feedback list or current open/closed status is not a readiness prerequisite; its presence, absence, status, or incomplete metadata alone does not lower the verdict. The compact historical feedback summary in `learning.md` and detailed rows in `learning_feedback.csv` remain records of their stated dates, not current open feedback or formal rules unless separately approved. |
 
 For the current Vajra pilot, selected posts are text-only. Do not require or assemble images, carousel slides, video, alt text, or other creative assets for Post Writer, Post Quality Analyst, or Publish and Verify.
 
-Assemble only information required by the current workflow stage. Include LinkedIn account access, publisher authorization, final-copy publication approval, actual publication status, or live-post verification only when assembling context specifically for Publish and Verify. For earlier stages, include only the human review or approval state that stage needs; do not add publication-readiness checks or disclaimers.
+Assemble only information required by the current workflow stage. For Post Writer, preserve explicit human approval of the current calendar version alongside every calendar row and item brief. Approval must cover every post on that version. Report missing, pending, partial, or outdated approval or missing item briefs as a blocker for the entire drafting batch. For batch QA, hand off the full draft batch and all corresponding calendar rows and briefs, with calendar approval as context. For publishing, hand off the selected item and its matching QA result. Include LinkedIn account access, publisher authorization, final-copy publication approval, actual publication status, or live-post verification only when assembling context specifically for Publish and Verify. For earlier stages, include only the human review or approval state that stage needs. Keep traceability concise: record each relevant source name/version once, include only evidence IDs and excerpts used by this stage, and state permission or freshness only when it affects the handoff. Do not repeat general policy reminders or source descriptions already defined in this skill.
 
 If a stage contract supplied for the run differs from this table, follow the formally approved version and report the version used. Do not turn a “should have” item into a required item unless the active contract says so.
 
@@ -83,7 +85,7 @@ Create and save the complete context package for downstream workflow use in the 
 
 Name each file `context_assembler_<MM>_<DD>_<version>_<stage_name>.md`, for example `context_assembler_11_11_01_post_quality_analyst.md`. Use a readable lowercase stage name with underscores, not a stage code. Start with version `01` for each stage name and increment it for additional runs of that stage on the same date. Use `Not provided`, `Not verified`, or `Not applicable` rather than ambiguous blanks.
 
-The saved package must retain the following structure for the downstream skill:
+The saved package must retain this structure for the downstream skill while keeping each section concise. Omit empty sections and table rows. Do not repeat generic rules from this skill in the package. Use a permission note only when a source's actual reuse scope affects the receiving stage; keep source names, versions, evidence IDs and permitted wording where they are needed for traceability.
 
 ```markdown
 # Run Context Package
@@ -102,16 +104,16 @@ The saved package must retain the following structure for the downstream skill:
 - Helpful inputs:
 - Freshness rules:
 
-## Selected records
-| Source or record name | Version | Information needed by the stage | Status | Permission/scope | Freshness check | Permitted wording or relevant excerpt |
-|---|---|---|---|---|---|---|
+## Selected evidence
+| Source/record and version | Evidence IDs and relevant fact | Status and permission/scope | Freshness result | Permitted wording/excerpt |
+|---|---|---|---|---|
 
 ## Run inputs and prior approved outputs
-| Input/output | Version or date | Source | Stage relevance |
+| Run input or prior output | Exact file/version | Sections or fields supplied | Relevance/status |
 |---|---|---|---|
 
-## Provisional notes
-| Note | Source | Why provisional | Not-for-claims reminder |
+## Material provisional notes
+| Note | Source | Why provisional | Effect on this stage |
 |---|---|---|---|
 
 ## Gaps and conflicts
@@ -138,3 +140,4 @@ Include only records and excerpts needed by the receiving stage. For BLOCKED, id
 
 ## Run artifact storage
 All context packages belong in the project’s `context package/` folder, one per workflow stage. Use the descriptive stage name in the filename; do not use internal stage codes. Do not save context packages in `output/`.
+

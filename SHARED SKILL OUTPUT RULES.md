@@ -36,6 +36,7 @@ Use these rules for every skill created or run for this project.
 ## Workflow-stage ownership
 
 - Brief Qualifier, Content Planner, Post Writer, and Post Quality Analyst report only their own stage decisions and any human approval state explicitly supplied for that stage. Do not add statements that an approval does not authorize publication, mark publication approval pending, or assess account access, publishing credentials, live-post status, or publication verification in these stages.
+- The designated human approver approves the entire calendar version once. After explicit approval of all posts on that version, Post Writer drafts the whole calendar in order. Partial approval holds the whole batch. Show calendar approval once and use item status only for brief completeness.
 - Content Planner may assign proposed calendar dates and deadlines because they are planning fields. Keep them separate from actual publication status.
 - Publish and Verify owns the final-copy approval check, publisher access check, publication action, live-post verification, and publication record. Its instructions are the sole source for those checks.
 - Preserve human review and approval states needed for workflow handoffs; do not infer approval from a stage verdict.

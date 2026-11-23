@@ -1,0 +1,281 @@
+{
+  "version": 1,
+  "knowledge_files": {
+    "period_brief": "context/period_brief.md",
+    "knowledge_index": "knowledge layer/knowledge_index.md",
+    "brand": "knowledge layer/brand.md",
+    "claims": "knowledge layer/claims.md",
+    "market": "knowledge layer/market.md",
+    "operations": "knowledge layer/operations.md",
+    "learning": "knowledge layer/learning.md",
+    "learning_posts": "knowledge layer/learning_posts.csv",
+    "learning_feedback": "knowledge layer/learning_feedback.csv"
+  },
+  "stages": {
+    "brief-qualifier": {
+      "required_knowledge": [
+        "period_brief",
+        "knowledge_index",
+        "brand",
+        "learning"
+      ],
+      "optional_knowledge": [
+        "claims",
+        "market",
+        "operations"
+      ],
+      "required_prior_outputs": [],
+      "optional_prior_outputs": [],
+      "max_output_tokens": 3500
+    },
+    "content-planner": {
+      "required_knowledge": [
+        "period_brief",
+        "brand",
+        "operations",
+        "learning"
+      ],
+      "optional_knowledge": [
+        "claims",
+        "market"
+      ],
+      "required_prior_outputs": [
+        "brief-qualifier"
+      ],
+      "optional_prior_outputs": [
+        "content-planner"
+      ],
+      "max_output_tokens": 4500
+    },
+    "post-writer": {
+      "required_knowledge": [
+        "period_brief",
+        "knowledge_index",
+        "brand",
+        "operations",
+        "learning"
+      ],
+      "optional_knowledge": [
+        "claims"
+      ],
+      "required_prior_outputs": [
+        "brief-qualifier",
+        "content-planner"
+      ],
+      "optional_prior_outputs": [
+        "post-writer"
+      ],
+      "max_output_tokens": 4000
+    },
+    "post-quality-analyst": {
+      "required_knowledge": [
+        "period_brief",
+        "knowledge_index",
+        "brand",
+        "operations",
+        "learning"
+      ],
+      "optional_knowledge": [
+        "claims"
+      ],
+      "required_prior_outputs": [
+        "brief-qualifier",
+        "content-planner",
+        "post-writer"
+      ],
+      "optional_prior_outputs": [
+        "post-quality-analyst"
+      ],
+      "max_output_tokens": 4000
+    },
+    "competitor-scan": {
+      "required_knowledge": [
+        "knowledge_index",
+        "market",
+        "learning"
+      ],
+      "optional_knowledge": [
+        "period_brief",
+        "brand"
+      ],
+      "required_prior_outputs": [],
+      "optional_prior_outputs": [
+        "competitor-scan"
+      ],
+      "max_output_tokens": 4000
+    },
+    "publish-and-verify": {
+      "required_knowledge": [
+        "knowledge_index",
+        "operations",
+        "learning"
+      ],
+      "optional_knowledge": [
+        "period_brief",
+        "brand",
+        "claims"
+      ],
+      "required_prior_outputs": [
+        "content-planner",
+        "post-quality-analyst"
+      ],
+      "optional_prior_outputs": [
+        "post-writer"
+      ],
+      "max_output_tokens": 3500
+    }
+  },
+  "allowed_prior_output_folders": [
+    "output",
+    "context",
+    "context package",
+    "output_latest",
+    "context_package_latest"
+  ],
+  "learning_policy": "Always load learning.md. Never include either CSV in full. Post Writer receives up to 10 most recent captions plus up to 5 topic matches and feedback/final excerpts from all 13 rows; Post Quality Analyst receives up to 5 draft-keyword caption matches and feedback/original/final excerpts from all 13 rows. Content Planner receives learning.md only, with optional date and opening-line metadata for posts from the last 60 days. Brief Qualifier, Competitor Scan, and Publish and Verify receive learning.md only. Use UTF-8 and a real CSV parser. Truncate each caption to at most 1,200 characters and keep total CSV-derived prompt material within an approximately 3,000-token budget; preserve all 13 feedback row IDs and mark shortened fields as excerpts. CSV captions carry no performance metrics; learning.md is authoritative for metrics. Preserve evidence IDs and reuse permissions.",
+  "prior_output_sections": {
+    "content-planner": {
+      "brief-qualifier": [
+        "__intro__",
+        "Readiness",
+        "Handoff",
+        "Issues that affect the work",
+        "Next step"
+      ],
+      "content-planner": [
+        "__intro__",
+        "Planning findings and readiness",
+        "Recommendation",
+        "2. Recommended content mix",
+        "Calendar",
+        "3. Period content calendar",
+        "Post directions",
+        "4. Individual item briefs",
+        "Decisions or issues",
+        "6. Questions and escalations"
+      ]
+    },
+    "post-writer": {
+      "brief-qualifier": [
+        "__intro__",
+        "Readiness",
+        "Handoff",
+        "Issues that affect the work",
+        "Next step"
+      ],
+      "content-planner": [
+        "__intro__",
+        "Planning findings and readiness",
+        "Recommendation",
+        "2. Recommended content mix",
+        "Calendar",
+        "3. Period content calendar",
+        "Post directions",
+        "4. Individual item briefs",
+        "Decisions or issues",
+        "6. Questions and escalations"
+      ],
+      "post-writer": [
+        "__intro__",
+        "Brief summary",
+        "Drafting readiness",
+        "Post copy",
+        "Draft copy",
+        "Format and checks",
+        "Proposed format and slot",
+        "Repetition and platform checks",
+        "Supplied claims",
+        "Claims and evidence",
+        "Needs attention",
+        "Questions or missing information"
+      ]
+    },
+    "post-quality-analyst": {
+      "brief-qualifier": [
+        "__intro__",
+        "Readiness",
+        "Handoff",
+        "Issues that affect the work",
+        "Next step"
+      ],
+      "content-planner": [
+        "__intro__",
+        "Planning findings and readiness",
+        "Calendar",
+        "3. Period content calendar",
+        "Post directions",
+        "4. Individual item briefs",
+        "Decisions or issues",
+        "6. Questions and escalations"
+      ],
+      "post-writer": [
+        "__intro__",
+        "Brief summary",
+        "Drafting readiness",
+        "Post copy",
+        "Draft copy",
+        "Format and checks",
+        "Proposed format and slot",
+        "Repetition and platform checks",
+        "Supplied claims",
+        "Claims and evidence",
+        "Needs attention",
+        "Questions or missing information"
+      ],
+      "post-quality-analyst": [
+        "__intro__",
+        "Result",
+        "QA result",
+        "Findings",
+        "Claim or permission issues",
+        "Claim and permission check",
+        "Suggested corrections",
+        "Review completion",
+        "Next step",
+        "Questions or limitations"
+      ]
+    },
+    "publish-and-verify": {
+      "content-planner": [
+        "__intro__",
+        "Calendar",
+        "Planning findings and readiness",
+        "3. Period content calendar",
+        "Post directions",
+        "4. Individual item briefs"
+      ],
+      "post-quality-analyst": [
+        "__intro__",
+        "Result",
+        "QA result",
+        "Findings",
+        "Claim or permission issues",
+        "Claim and permission check",
+        "Suggested corrections",
+        "Review completion",
+        "Next step",
+        "Questions or limitations"
+      ],
+      "post-writer": [
+        "Post copy",
+        "Brief summary",
+        "Drafting readiness",
+        "Draft copy",
+        "Needs attention",
+        "Questions or missing information"
+      ]
+    },
+    "competitor-scan": {
+      "competitor-scan": [
+        "__intro__",
+        "2. Competitor profiles",
+        "4. Competitive analysis",
+        "5. Previous scan comparison",
+        "6. Candidate knowledge updates",
+        "Sources",
+        "7. Research limitations, questions and escalations",
+        "8. Run record and final verdict"
+      ]
+    }
+  }
+}

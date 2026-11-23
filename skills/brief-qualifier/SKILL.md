@@ -11,16 +11,18 @@ Review a supplied social-content brief before planning begins. Return a clear re
 
 This skill qualifies the brief. It does not create a content calendar or posts, approve client knowledge, calculate the client's Knowledge Readiness Score (KRS), change source files, or publish content.
 
+## Stage input handoff
+For this project, use `workflow_inputs.json` in the project’s `api_pipeline/` folder as the stage input map. Brief qualification uses the whole `context/period_brief.md`, `knowledge layer/knowledge_index.md`, `knowledge layer/brand.md`, and `knowledge layer/learning.md`. `knowledge layer/claims.md`, `market.md`, and `operations.md` are optional when the run inputs select them. No earlier skill output is required. Do not search for a different or newer brief/output; use the files supplied for this run and report a missing required file.
 ## Inputs
 
 ### Required
 
 - The brief to qualify.
 - Client and project identity.
-- Channel and planning period .
+- Channel and publishing start/end dates, from the active brief or explicit run inputs.
 - The applicable context package, including its verdict, required/optional items, approved knowledge records, record versions, freshness results, and any known conflicts.
 - period brief and intelligence inputs: the period objectives and chosen primary KPI with its definition and measurement method. Use the approved competitor set from the approved market information when relevant. New industry or competitor research and a separate Competitor Scan are not required for this pilot.
-- A baseline for the primary KPI, with its value, source and period. For the Vajra LinkedIn pilot covering 11–20 November 2026, use the current post-level impression dataset in learning.md as the baseline: 63 records with Published dates April–October 2026, with a mean of 489.3 and median of 381 impressions per record. The separate user-directed target is approximately 5,700 impressions across six posts. Do not conflate the target with measured baseline data.
+- A baseline for the primary KPI, with its value, source and period. For the Vajra LinkedIn pilot, use the current post-level impression dataset in learning.md as the baseline: 63 records with Published dates April–October 2026, with a mean of 489.3 and median of 381 impressions per record. The separate user-directed target is approximately 5,700 impressions across six posts. Do not conflate the target with measured baseline data.
 
 If the brief or its identity is missing, do not infer it from unrelated files. Return a Blocked verdict and request the missing input.
 
@@ -28,10 +30,10 @@ Use the approved competitor set in the approved market information when relevant
 
 ### Helpful when applicable
 
-- Calendar or event information when supplied and relevant. For the Vajra pilot, use the period brief and user-directed weekly schedule; a separate calendar reconciliation is not required.
+- Calendar or event information when supplied and relevant. For the Vajra pilot, use the publishing start date, end date, and post count from the run inputs or the active brief.
 - Earlier approved stage outputs or decisions relevant to this brief.
 - A brief qualification checklist supplied by the project owner.
-- Feedback records from learning.md or current feedback supplied for the brief, if available. Feedback presence, absence, open/closed status, or incomplete metadata is optional context and must not determine the verdict; no separate feedback-clear confirmation is required.
+- The compact historical feedback summary in learning.md or current feedback supplied for the brief, if available; detailed before/after text from `learning_feedback.csv` is not required here. Feedback presence, absence, open/closed status, or incomplete metadata is optional context and must not determine the verdict; no separate feedback-clear confirmation is required.
 
 ## Source and knowledge handling
 
@@ -50,7 +52,7 @@ Use the approved competitor set in the approved market information when relevant
 3. **Check the brief's planning essentials.** For each applicable item below, record what the brief says, its source, and whether it is complete, missing, provisional, or conflicting:
    - business/content objective and desired outcome;
    - target audience and, when relevant, geography;
-   - planning period and relevant dates;
+   - the publishing start date, end date, and post count as the single active period and scope; check that the start date is today or later in India time, the range is ordered, and it can fit one post per day. If the start date has passed, return BLOCKED and request a new publishing range, including when it came from brief defaults. Carry all three values into Key details;
    - content focus or approved pillars;
    - CTA priorities or destination;
    - scope, cadence or formats when these affect planning;
@@ -58,7 +60,7 @@ Use the approved competitor set in the approved market information when relevant
    - the period objectives and chosen primary KPI, including its definition and measurement method;
    - the selected primary KPI and its baseline/target, preserving source and period details and following any explicit user direction that designates a planning baseline or target for this pilot; never propose target numbers or add secondary KPIs;
    - required human review/approval step and the next-stage handoff.
-4. **Check optional market information and the KPI baseline.** Use the approved competitor set when relevant. Do not require new industry or competitor research or a separate Competitor Scan for this pilot. For the Vajra LinkedIn pilot covering 11–20 November 2026, LinkedIn organic impressions is the only KPI in scope. Use the approved 63 post-level impression records in learning.md as the designated historical baseline and retain their April–October 2026 Published dates, mean of 489.3 and median of 381. The separate user-directed target is approximately 5,700 impressions across six posts. Keep baseline and target distinct. Historical records do not age out or become stale based on the qualification date; use their dates as the period the measurements describe. Apply freshness checks to current-performance claims, not to historical data solely because they are old. Preserve source caveats, use Published dates for comparisons, and never invent target numbers or add secondary KPIs.
+4. **Check optional market information and the KPI baseline.** Use the approved competitor set when relevant. Do not require new industry or competitor research or a separate Competitor Scan for this pilot. For the Vajra LinkedIn pilot, LinkedIn organic impressions is the only KPI in scope. Use the approved 63 post-level impression records in learning.md as the designated historical baseline and retain their April–October 2026 Published dates, mean of 489.3 and median of 381. The separate user-directed target is approximately 5,700 impressions across six posts. Keep baseline and target distinct. Historical records do not age out or become stale based on the qualification date; use their dates as the period the measurements describe. Apply freshness checks to current-performance claims, not to historical data solely because they are old. Preserve source caveats, use Published dates for comparisons, and never invent target numbers or add secondary KPIs.
 5. **Handle supplied claims.** Treat claims supplied in the active brief or project materials as final. Do not require separate claim approval, evidence, or reuse approval, and do not block or rewrite them because of older status labels. Route accuracy, permission, or offering-status concerns to human final-copy approval. Do not invent or expand supplied claims.
 6. **Check other inputs and decisions.** Use the period brief and user-directed schedule for the Vajra pilot; no separate calendar reconciliation is required. If relevant calendar or event information is supplied, flag actual conflicts, unconfirmed events, blackout constraints, or dependencies that affect the requested period. Feedback, whether historical or current, may be recorded as context when supplied, but its presence, absence, open/closed status, or incomplete metadata must not determine the readiness verdict. Do not require a separate feedback-status confirmation. Do not treat historical feedback as current open feedback or as a formal rule unless the rule was separately approved.
 7. **Separate gaps by impact.** Block for missing critical brief inputs such as objective, audience, or period when they make planning indeterminate. Claim accuracy, evidence, approval, permission, or offering-status concerns go to human final-copy approval and do not by themselves block qualification.
@@ -79,29 +81,31 @@ Claims supplied in the active brief or project records are final for this workfl
 
 ## Output format
 
-Write a concise, user-facing qualification report. Lead with the verdict and its reason. Include only details that change the user’s understanding or next action; do not repeat the full brief, source inventory, internal run metadata, or empty checklist rows. Keep source names beside findings when they help the user verify them.
+Use this Markdown template for every completed qualification, including READY, LIMITED and BLOCKED. Keep the title prefix, headings, field labels and order exactly as shown. Replace bracketed placeholders with concise, evidence-based content. Keep the report to this structure in chat and in the saved output. When relaying the report from a skill run, reproduce the returned report without replacing it with a shorter summary or adding sections.
 
-```markdown
-# Brief Qualification — [project or period]
+~~~markdown
+# Brief Qualification - [project]
 
-**Verdict: READY / LIMITED / BLOCKED**
-**Reason:** [Plain-language reason, directly tied to the verdict.]
+**Verdict: [READY / LIMITED / BLOCKED]**
+**Reason:** [One short sentence giving the main reason for the verdict.]
 
 ## Key details
-- Period:
-- Objective and primary KPI:
-- Baseline and target:
-- Audience and scope:
+[In one or two short sentences, state the objective, audience in broad terms, format, and sole KPI. Use about 35 words. Include specific audience roles only if they affect planning.]
+
+- **Baseline:** [State the post count, reporting period, and mean and median impressions per post when supplied.]
+- **Target:** [State the total target and the number of posts it covers.]
+- **Publishing window:** [State the active publishing start and end dates.]
 
 ## Issues that affect the work
-- [Only material gaps, conflicts, claim or permission constraints. If none, say “None identified.”]
+- [One short bullet per material issue. If there are none, write only None identified.]
 
 ## Next step
-- Can proceed:
-- Must resolve first: [Only if applicable]
-```
+- Can proceed: [Next action, or None.]
+- Must resolve first: [Required action, or None.]
+~~~
 
-Omit a key-detail line when it is not relevant to the qualification. Do not show a separate context-package verdict unless it changes the qualification or the next step. Feedback and historical data follow the rules above and should not be listed as readiness issues for those reasons alone.
+Always include the summary paragraph and all three bullets. Keep the baseline, target, and publishing window separate. Use the active publishing window as the only current date range and distinguish it from the historical baseline reporting period. Preserve the supplied figures, dates, and post count. Use one line per bullet and keep the three bullets separate. Give each fact once unless it is needed to explain the verdict or resolve an issue. Always fill every field. If only part of a combined field is missing, report the available part and mark the missing part Not provided. If an issue in the context changes the verdict or next step, include it in Issues that affect the work. Keep historical-data and optional-feedback handling consistent with the readiness rules above.
 
 ## Run artifact storage
 Save the final qualification report and run record in the project’s `output/` folder. Name the file `<skill_name>_<MM>_<DD>_<version>.md`, for example `brief_qualifier_11_11_01.md`. Start with version `01` and increment it for each additional run of this skill on the same date.
+

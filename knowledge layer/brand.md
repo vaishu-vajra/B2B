@@ -111,7 +111,7 @@ Working priorities stated in source: SaaS and technology; manufacturing and indu
 - Resolve the final spelling standard; the PDF says Indian/British English subject to a brand-style decision.
 - Confirm current public service descriptions and launch status against website/practice owners.
 - Confirm the audience/ICP and priority industries for the specific project.
-- The pilot hashtag bank is user-approved as listed above. The six-month LinkedIn post collection in learning.md is the default approved internal style and structure reference; no separate sample is required. The sample in `B2B- final (1).pdf`, page 60, is optional supplementary style reference. Do not invent or expand claims; use supplied claims as final inputs and route any accuracy concern to human final-copy approval.
+- The pilot hashtag bank is user-approved as listed above. The six-month LinkedIn post collection in `learning_posts.csv`, supplied as selected excerpts for drafting and QA, is the default approved internal style and structure reference; no separate sample is required. The sample in `B2B- final (1).pdf`, page 60, is optional supplementary style reference. Do not invent or expand claims; use supplied claims as final inputs and route any accuracy concern to human final-copy approval.
 
 ## K1.6 User-approved pilot hashtag bank
 
