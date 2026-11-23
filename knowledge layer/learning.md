@@ -166,7 +166,7 @@ Purpose: Teach the agent what Vajra Global's reviewers accept, reject and repeat
 
 ### K5.1 Vajra Global's feedback register
 
-When a reviewer submits feedback in the application, save one row in learning_feedback.csv with the following fields. Use the same Feedback ID when recording a correction or resolving the feedback.
+The runtime learning_feedback.csv file uses rec (Feedback ID), post_date, feedback (verbatim reviewer comment), original, and final. Historical rows F1–F13 mirror the register below. Leave original and final blank when source text is unavailable, and treat each shared ID as one comment. Use the following fields for application review records and retain the same Feedback ID when recording a correction or resolution.
 Field	How it is recorded
 Feedback ID	Application-generated unique ID, e.g. VG-FB-001
 Post ID	LinkedIn post or draft reference from the review
@@ -189,7 +189,7 @@ Set Resolution to Pending when follow-up is still required. Leave unavailable fi
 
 Historical reviewer feedback
 
-Source-provided, usable as context despite missing reviewer/date/decision metadata; record those fields for new reviews. Historical entries don't mean feedback is currently open. Classify as one-time correction / recurring preference / formal rule; only the designated human approver promotes to a rule. Surface conflicting reviewer feedback; don't pick a side.
+Use all available reviewer comments as editorial context without separate approval, including comments with an unknown decision, reviewer, date, or resolution. Record those fields for new reviews. Historical entries don't mean feedback is currently open. Classify as one-time correction / recurring preference / formal rule; only the designated human approver promotes to a rule. Surface conflicting reviewer feedback; don't pick a side.
 
 | ID | Post date | Feedback (verbatim) |
 

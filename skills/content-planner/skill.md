@@ -18,7 +18,7 @@ Validate the proposed calendar against dates, deadlines, dependencies, blackout 
 Keep planning, calendar validation and item brief creation within the same workflow. The designated human approver reviews and approves the entire calendar version in one decision. Record the decision once as Calendar approval: Pending, Approved, or Not approved. Only explicit approval of the entire calendar hands off to Post Writer. Pass the full calendar and every item brief so Post Writer drafts all approved rows in order. Approval for only some rows leaves the calendar Pending. Item status describes brief completeness only. Record Approved only when the designated approver explicitly approved that calendar version. An approved prior version can carry forward only when its schedule and item scope still match; material changes return the calendar to Pending. In older reports, use the explicit overall plan approval as evidence for the matching calendar version and disregard individual drafting approval labels.
 
 ## Stage input handoff
-For this project, use `workflow_inputs.json` in the project’s `api_pipeline/` folder as the stage input map. Content planning uses the whole `context/period_brief.md`, `brand.md`, `operations.md`, and `learning.md`; `claims.md` and `market.md` are optional when selected for the run. It needs the Brief Qualifier readiness and handoff sections for the same brief; omitted report sections are not evidence that information is absent from the source. A prior Content Planner output is optional only when revising an existing plan. Use only the explicitly supplied output paths; do not search for or substitute another run. Use `learning.md` for metrics and its compact feedback summary. The API does not send caption rows to this stage; it may add only post dates and opening lines from the last 60 days.
+For this project, use `workflow_inputs.json` in the project’s `api_pipeline/` folder as the stage input map. Content planning uses the whole `context/period_brief.md`, `brand.md`, `operations.md`, and `learning.md`; `claims.md` and `market.md` are optional when selected for the run. It needs the Brief Qualifier readiness and handoff sections for the same brief; omitted report sections are not evidence that information is absent from the source. A prior Content Planner output is optional only when revising an existing plan. Use only the explicitly supplied output paths; do not search for or substitute another run. Use learning.md for metrics and its compact feedback register. Consider every available reviewer comment from the register, supplied CSV comment rows, and current run inputs, regardless of approval, age, status, or missing metadata. Count the same feedback ID once. The API does not send caption rows to this stage; it may add only post dates and opening lines from the last 60 days.
 ## 2. Input
 
 ### 2.1 Current Run Context
@@ -89,7 +89,7 @@ Do not hardcode client-specific occasions, event lists or tools in this skill. R
 - Latest available post performance data and its reporting date.
 - Performance interpretation rules.
 - Latest reported KPI values, reporting dates and known limitations.
-- Resolved feedback and recurring editorial preferences.
+- All available feedback and recurring editorial preferences.
 - Working editorial standards.
 - Relevant quality and content performance learnings.
 

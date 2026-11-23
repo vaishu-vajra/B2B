@@ -33,7 +33,7 @@ Use the approved competitor set in the approved market information when relevant
 - Calendar or event information when supplied and relevant. For the Vajra pilot, use the publishing start date, end date, and post count from the run inputs or the active brief.
 - Earlier approved stage outputs or decisions relevant to this brief.
 - A brief qualification checklist supplied by the project owner.
-- The compact historical feedback summary in learning.md or current feedback supplied for the brief, if available; detailed before/after text from `learning_feedback.csv` is not required here. Feedback presence, absence, open/closed status, or incomplete metadata is optional context and must not determine the verdict; no separate feedback-clear confirmation is required.
+- All available reviewer comments from the supplied feedback rows, the historical register in learning.md, and current run inputs. Consider each comment as context without separate approval, regardless of its age, status, or missing metadata. Count the same feedback ID once. Before/after copy is optional; detailed before/after text from `learning_feedback.csv` is not required here. Feedback presence, absence, open/closed status, or incomplete metadata is optional context and must not determine the verdict; no separate feedback-clear confirmation is required.
 
 ## Source and knowledge handling
 

@@ -1,29 +1,42 @@
 ---
 name: context-assembler
-description: Assembles a run-specific context package for a social-content workflow stage, checking source access, freshness, and stage readiness. Selects approved knowledge, user-supplied final claims, live inputs, and earlier stage outputs relevant to that stage, then records sources, conflicts, gaps, and a Ready, Limited, or Blocked verdict. Does not require separate claim-level approval or evidence; claim concerns go to human final-copy approval. Does not create or review content, modify source files, calculate KRS, publish, or change access rights.
+description: Assembles social-content workflow context in one run, saving a separate package for Brief Qualifier, Content Planner, Post Writer, Post Quality Analyst, and Competitor Scan. Each package contains the relevant source material, its readiness at assembly, and the upstream outputs or approvals needed at execution. Also supports explicitly requested standalone stages.
 ---
 
 # Context Assembler
 
 ## Purpose
 
-Prepare a run-specific context package for one workflow stage. Read the stage contract, check permission before retrieving or selecting records, provide only the current and permitted information the stage needs, and report gaps, conflicts, provisional notes, and a readiness verdict.
-
-Run Context Assembler separately immediately before every downstream skill execution, including a rerun or revision of a stage. Assemble a fresh package for that specific stage and run; do not reuse a package prepared for another stage or an earlier run.
+Prepare a run-specific context package for each receiving skill. Check permission before retrieving or selecting records, include the current and permitted information the recipient needs, and report the gaps, conflicts, provisional notes, and readiness for that stage.
 
 This skill assembles context; it does not write or review content, calculate the Knowledge Readiness Score (KRS), approve records, resolve conflicts, modify knowledge files, publish, or change access rights. It contains no client-specific facts. Use the supplied knowledge layer, stage contract, and run inputs.
 
+## Workflow execution
+
+For the five-skill workflow, run Context Assembler once at the start. Read the shared run inputs and the union of the five stages' mapped sources once. Apply the stage contracts independently and save exactly five separate Markdown context packages for the same run ID, one for each recipient. Include the source content each stage needs and its provenance. Share only the sources and excerpts relevant to each recipient. If the request explicitly selects one standalone stage, assemble one package for that stage.
+
+| Receiving skill | Include at assembly | Attach or check when the skill runs |
+|---|---|---|
+| Brief Qualifier | Active period brief, objective, audience, KPI definition, target, baseline, dates, and relevant project rules. | Confirm the publishing start date is valid for the run. |
+| Content Planner | Planning window, post count, scope, pillars, constraints, and relevant performance context. Include calculated slots when supplied. | Attach the same-run Brief Qualifier result. Require a READY or LIMITED qualification and a valid planning window. |
+| Post Writer | Text-post standards, brand voice, supplied claims and selected historical writing and feedback excerpts. | Attach the qualified brief, current calendar with every item brief, and explicit human approval of that exact full calendar version. Draft only when the entire current calendar is approved and its item briefs are complete. |
+| Post Quality Analyst | Text-review standards, rubric, brand voice, supplied claims and relevant historical feedback. | Attach the same-run qualified brief, current approved calendar and item briefs, and the complete matching draft batch. Retrieve the permitted historical caption matches using the actual drafts at this point. Verify each draft maps to its calendar item before review. |
+| Competitor Scan | Approved competitor set, relevant market and brand context, and research scope. Include an explicitly supplied prior scan only when relevant. | Run independently of the other four skills. Gather current public evidence within the research scope during the scan. |
+
+For the five-skill workflow, the workflow caller or receiving skill attaches the named same-run outputs, records and permitted excerpts to its own package at execution and checks the remaining required inputs. Do not invoke Context Assembler again between those stages or to resume an incomplete stage with the same source inputs. Record missing upstream results or approvals as pending dependencies in the package. If required for execution, they make the stage BLOCKED at assembly. This verdict describes the inputs available at assembly. After the dependencies arrive, the caller or receiving skill checks and records execution readiness independently, preserving the saved package and any unresolved blockers. If shared inputs change materially, prepare a new workflow run with five fresh packages.
+
 ## Project stage input map
-For this project, `api_pipeline/workflow_inputs.json` defines the whole knowledge files and prior stage outputs supplied for each receiving stage. Assemble only the listed files for the selected stage. Prior outputs must be explicitly named for this run; never select a file by guessing which output is latest or substitute another run. Report required prior outputs that are absent. A supplied prior output may contain only selected Markdown sections; omitted sections are not evidence that information is absent from its source. The stage map requires the compact `learning.md` core for every workflow stage. For Post Writer and Post Quality Analyst, include only the API-selected caption and feedback excerpts from the two CSVs in the changing run context. Content Planner may receive only dates and opening lines from posts published in the last 60 days. Never include a full CSV. Preserve the approximately 3,000-token CSV excerpt budget and mark truncated fields.
+For this project, `api_pipeline/workflow_inputs.json` defines the whole knowledge files and prior stage outputs supplied for each receiving stage. For each package, select only the sources listed for its receiving stage. Prior outputs must be explicitly named for this run; never select a file by guessing which output is latest or substitute another run. Record required prior outputs that are absent and name the stage or approver that will supply them. A supplied prior output may contain only selected Markdown sections; omitted sections are not evidence that information is absent from its source. The stage map requires the compact `learning.md` core for every workflow stage. For each in-scope content stage, make every available reviewer comment accessible from the supplied feedback rows, learning.md register, or current run inputs. Preserve each comment and ID regardless of approval, age, status, or missing metadata. Count IDs repeated across sources once. Include the permitted writer caption and final-copy excerpts, and the available QA original and final excerpts. The caller attaches caption matches that require the actual drafts at QA execution. Content Planner may receive only dates and opening lines from posts published in the last 60 days. Use structured rows for feedback comments and selected excerpts for historical post copy. Preserve the approximately 3,000-token target for CSV-derived context by shortening supporting copy when needed, while keeping reviewer comments intact.
+
 ## Inputs 
    
 ### Required
 
-- Workflow-stage name, run ID, client/project identity, channel, and period where applicable.
+- Receiving stage names (or one explicitly requested standalone stage), run ID, client/project identity, channel, and period where applicable.
 - The approved stage contract and policy version. Use the stage requirements below when they are the active workflow contract. If the requested workflow stage or active contract is unclear, do not invent one; report the gap.
 - The mapped source files or atomic record register, with source names and versions where available. Include the knowledge index for stages that require it. For Content Planner, use the mapped files' own metadata for status, scope, and freshness checks.
 - Permission and reuse-scope information for the records and the requesting stage.
-- The live inputs required by the stage, such as a period brief, calendar slice, or earlier approved stage output.
+- The live inputs available at assembly, such as the active period brief. Record required earlier stage results, calendar approval, and other execution inputs that are still pending.
 - Record metadata needed to check status and freshness: approval status, source, owner, approval date, review date or valid-until date, and applicable refresh window.
 
 ### Use when applicable
@@ -51,29 +64,29 @@ Use this table to select the stage's required information, helpful information, 
 | Approval and publishing | Approval chain; verified LinkedIn page access and publishing rights; CTA destinations and tracking-link rules | None specified | Re-verify page rights and approval chain at release |
 | Community management | Current response and escalation playbook with contacts; approved company facts | Audience objections | Response playbook must be current |
 | Measurement | Definition and current reporting for the single KPI selected in the approved brief | Past performance reports, if needed for comparison | For the current Vajra pilot, measure LinkedIn organic impressions only; do not add secondary KPIs. Preserve the dataset's reporting period and source caveats. |
-| Review and improvement | Current-cycle measurement report, when required by the stage contract | Current-cycle feedback or rework records, if supplied | Use supplied feedback as context where relevant. A feedback list or current open/closed status is not a readiness prerequisite; its presence, absence, status, or incomplete metadata alone does not lower the verdict. The compact historical feedback summary in `learning.md` and detailed rows in `learning_feedback.csv` remain records of their stated dates, not current open feedback or formal rules unless separately approved. |
+| Review and improvement | Current-cycle measurement report, when required by the stage contract | Current-cycle feedback or rework records, if supplied | Use supplied feedback as context where relevant. A feedback list or current open/closed status is not a readiness prerequisite; its presence, absence, status, or incomplete metadata alone does not lower the verdict. The compact historical feedback summary in `learning.md` and detailed rows in `learning_feedback.csv` remain records of their stated dates, and can be used immediately as editorial context. Formal rule changes still require the designated approver. |
 
 For the current Vajra pilot, selected posts are text-only. Do not require or assemble images, carousel slides, video, alt text, or other creative assets for Post Writer, Post Quality Analyst, or Publish and Verify.
 
-Assemble only information required by the current workflow stage. For Post Writer, preserve explicit human approval of the current calendar version alongside every calendar row and item brief. Approval must cover every post on that version. Report missing, pending, partial, or outdated approval or missing item briefs as a blocker for the entire drafting batch. For batch QA, hand off the full draft batch and all corresponding calendar rows and briefs, with calendar approval as context. For publishing, hand off the selected item and its matching QA result. Include LinkedIn account access, publisher authorization, final-copy publication approval, actual publication status, or live-post verification only when assembling context specifically for Publish and Verify. For earlier stages, include only the human review or approval state that stage needs. Keep traceability concise: record each relevant source name/version once, include only evidence IDs and excerpts used by this stage, and state permission or freshness only when it affects the handoff. Do not repeat general policy reminders or source descriptions already defined in this skill.
+For each package, assemble only information required by its receiving stage and identify later inputs under the run inputs or gaps sections. For Post Writer, preserve explicit human approval of the current calendar version alongside every calendar row and item brief. Approval must cover every post on that version. Report missing, pending, partial, or outdated approval or missing item briefs as a blocker for the entire drafting batch. For batch QA, hand off the full draft batch and all corresponding calendar rows and briefs, with calendar approval as context. For publishing, hand off the selected item and its matching QA result. Include LinkedIn account access, publisher authorization, final-copy publication approval, actual publication status, or live-post verification only when assembling context specifically for Publish and Verify. For earlier stages, include only the human review or approval state that stage needs. Keep traceability concise: record each relevant source name/version once, include only evidence IDs and excerpts used by this stage, and state permission or freshness only when it affects the handoff. Do not repeat general policy reminders or source descriptions already defined in this skill.
 
 If a stage contract supplied for the run differs from this table, follow the formally approved version and report the version used. Do not turn a “should have” item into a required item unless the active contract says so.
 
 ## Workflow
 
-1. **Identify the run and stage.** Confirm the run ID, stage, client/project, channel, period, and policy/contract version. If any identifier is missing and affects record selection, request it rather than guessing.
-2. **Read the stage contract.** List the required items, helpful items, and freshness windows for this stage. Do not assemble a general client dossier.
+1. **Identify the run and recipients.** Confirm the run ID, workflow or standalone stage, client/project, channel, period, and policy or contract version. If an identifier is missing and affects record selection, request it.
+2. **Read the stage contracts.** Determine what each recipient needs, what is helpful, and which freshness windows apply. Use the same source read for every package that needs that source.
 3. **Check source access.** Confirm this workflow may access the selected file or record. Do not treat internal source access as claim approval. Supplied claims are final for this pilot; route any use or accuracy concern to human final-copy approval.
 4. **Select the minimum relevant material.** Include approved knowledge records, user-supplied final claims, live inputs, and earlier approved stage outputs needed by the receiving stage. Keep source provenance for traceability without using old claim-status labels as gates.
 5. **Check status and freshness.** Apply explicit expiry rules to current-state information. Historical data remain tied to their actual periods regardless of run date. Do not require separate approval or evidence for supplied claims; send accuracy or permission concerns to human final-copy approval. Feedback status and metadata do not determine readiness.
 6. **Detect conflicts and provisional information.** Preserve source differences without choosing a newer record. Treat claims supplied for this pilot as final despite older provisional or unverified labels; route possible inaccuracies or permission concerns to human final-copy approval without lowering this stage verdict. Feedback presence, absence, status, or metadata is not a readiness gap.
-7. **Assess gaps.** For every missing, stale, restricted, or conflicting item, state the requirement, source descriptions and versions involved, known owner, impact, and whether it blocks. Use “Owner not specified” if no owner is identified. Do not invent owners, permissions, approvals, or source data.
+7. **Assess gaps for each recipient.** Record each missing, stale, restricted, or conflicting item, affected sources, known owner, impact, and whether it blocks. For pending dependencies, identify what must be attached and who or which stage supplies it. Use “Owner not specified” if no owner is identified.
 8. **Set the stage verdict.**
    - **READY:** Required stage inputs are available and usable; supplied claims do not need separate approval or evidence, and historical age or feedback status does not lower readiness.
    - **LIMITED:** Use only for a material non-claim limitation that prevents a full handoff. Supplied claim status or evidence concerns go to human final-copy approval and do not lower this verdict.
    - **BLOCKED:** A required input is missing, inaccessible, expired under an explicit rule, or materially conflicting. An older claim approval/evidence label alone does not cause BLOCKED.
    Assess the current run against this stage contract. A prior status based solely on historical-data age or feedback presence, absence, status, or metadata is not carried forward as a limitation. Preserve other still-applicable blockers and limitations. A stage-level verdict is not the KRS and does not approve the knowledge layer.
-9. **Build the context package.** Return the output format below. Include only permitted excerpts or wording needed by the stage; preserve descriptive source names and versions for traceability.
+9. **Build and verify the context packages.** Use the format below separately for each recipient and preserve source names and versions. For the five-skill workflow, verify all five stage names and the shared run ID before finishing.
 
 ## Supplied claim handling
 
@@ -81,7 +94,7 @@ Claims supplied in the active brief or project records are final for this workfl
 
 ## Context package output
 
-Create and save the complete context package for downstream workflow use in the project’s `context package/` folder. This package is an internal handoff artifact, not the user-facing report. Do not paste its source tables, permission details, run-input inventory, internal identifiers, or full package into the chat. After saving it, give the user a brief plain-language status only: stage prepared, READY/LIMITED/BLOCKED verdict, the reason, any material limitation, and the next permitted step. If file creation is unavailable, state that clearly and provide only the concise status; do not represent a hand-written summary as a saved context package.
+For the five-skill workflow, save all five complete context packages in the run's designated context-package folder. For a standalone stage, save its one complete package in the same way. Keep internal source tables, reuse permissions, and the full packages in the saved files. After saving, list the files and give the READY, LIMITED, or BLOCKED status at assembly for each stage, with the material reason and next permitted step. If file creation is unavailable, report that limitation and provide a concise status without representing it as a saved package.
 
 Name each file `context_assembler_<MM>_<DD>_<version>_<stage_name>.md`, for example `context_assembler_11_11_01_post_quality_analyst.md`. Use a readable lowercase stage name with underscores, not a stage code. Start with version `01` for each stage name and increment it for additional runs of that stage on the same date. Use `Not provided`, `Not verified`, or `Not applicable` rather than ambiguous blanks.
 
@@ -127,7 +140,7 @@ The saved package must retain this structure for the downstream skill while keep
 - Material limitations:
 ```
 
-Include only records and excerpts needed by the receiving stage. For BLOCKED, identify the blocker and say the downstream stage must not proceed. For LIMITED, state what may proceed and the specific limitation. Keep internal traceability inside the saved package.
+Include only records and excerpts needed by the receiving stage. For BLOCKED, identify what the receiving stage must obtain or resolve before proceeding. For LIMITED, state what may proceed and the specific limitation. Keep internal traceability inside the saved package.
 
 ## Boundaries
 
@@ -139,5 +152,5 @@ Include only records and excerpts needed by the receiving stage. For BLOCKED, id
 - Do not expose restricted personal information or evaluation answers in a context package.
 
 ## Run artifact storage
-All context packages belong in the project’s `context package/` folder, one per workflow stage. Use the descriptive stage name in the filename; do not use internal stage codes. Do not save context packages in `output/`.
+Use the run's designated context-package folder when supplied. Otherwise save in the project-root `context package/` folder. Use the descriptive stage name in the filename. Keep context packages separate from skill results in `output/`.
 
