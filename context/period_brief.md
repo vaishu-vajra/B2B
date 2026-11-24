@@ -13,14 +13,14 @@ Tell the agent what Vajra wants to achieve during a particular publishing period
 ## Run-specific directions
 
 - **Primary KPI:** Impressions, measured as LinkedIn organic impressions.
-- **Target:** Approximately 5,700 LinkedIn organic impressions across the six-post pilot. This is the user-directed target, not the baseline.
+- **Target:** Approximately 2,936 LinkedIn organic impressions across the six-post pilot (about 489 per post). This is the user-directed target, not the baseline.
 - **Baseline:** Use the current post-level impression data in the learning records: 63 LinkedIn posts with Published dates from April–October 2026; mean 489.3 and median 381 impressions per record.
 - **Competitor information:** Use the approved competitor set in `knowledge layer/market.md`. A separate Competitor Scan is additional research and is not required for this pilot.
-- **Publishing start date:** 2026-11-23
+- **Publishing start date:** 2026-11-26
 - **Publishing end date:** 2026-12-10
 - **Planned post count:** 6
 - **Pilot format:** Text-only LinkedIn posts.
-- **Pilot data scope:** The target is approximately 5,700 LinkedIn organic impressions across six posts. The baseline is the newly supplied post-level impression dataset: 63 records with Published dates from April–October 2026, mean 489.3 and median 381 impressions per record. These are separate values and concepts. Use post-level impressions and the supplied Published dates for relevant performance and time-based review, and available post copy for overlap checks. Use topic or format breakdowns only when post records can be reliably matched to calendar/content fields. Sourced audience-language research remains waived. Impressions remains the only KPI in scope; do not add other metrics as KPIs.
+- **Pilot data scope:** The target is approximately 2,936 LinkedIn organic impressions across six posts. The baseline is the newly supplied post-level impression dataset: 63 records with Published dates from April–October 2026, mean 489.3 and median 381 impressions per record. These are separate values and concepts. Use post-level impressions and the supplied Published dates for relevant performance and time-based review, and available post copy for overlap checks. Use topic or format breakdowns only when post records can be reliably matched to calendar/content fields. Sourced audience-language research remains waived. Impressions remains the only KPI in scope; do not add other metrics as KPIs.
 - **Supplied claims:** Claims supplied in the active brief or project materials are final for this pilot. No separate claim-level approval or evidence is required; route accuracy, disclosure, or permission concerns to human final-copy approval. The exact final post still requires human approval before publication.
 - **Writing style source:** Use selected excerpts from the six-month LinkedIn post collection in `knowledge layer/learning_posts.csv` as the default internal style, structure, and text-overlap reference; the API supplies only stage-relevant excerpts. Use `knowledge layer/learning.md` for the performance baseline, compact feedback summary, and rubric. A separate approved writing sample is optional. If a claim from a historical post is selected for the current copy, treat it as a supplied final claim, preserve its scope, and route any concern to human final-copy approval.
 - **Open feedback:** The confirmation recorded on 18 November covered the earlier scope. Feedback for the full publishing range is unconfirmed and remains optional context.
@@ -70,6 +70,6 @@ Use the publishing start and end dates above as the active period for this brief
 
 | Primary KPI | Measurement | Current baseline data | Pilot target |
 |---|---|---|---|
-| Impressions | LinkedIn organic impressions | 63 post records with Published dates April–October 2026; mean 489.3 and median 381 impressions per record | Approximately 5,700 across six posts |
+| Impressions | LinkedIn organic impressions | 63 post records with Published dates April–October 2026; mean 489.3 and median 381 impressions per record | Approximately 2,936 across six posts |
 
-The 63 post records are the baseline dataset; the approximately 5,700-impression figure is the separate target. Published dates are supplied for all 63 records. Impressions is the only KPI in scope for this pilot.
+The 63 post records are the baseline dataset; the approximately 2,936-impression figure is the separate target. Published dates are supplied for all 63 records. Impressions is the only KPI in scope for this pilot.
